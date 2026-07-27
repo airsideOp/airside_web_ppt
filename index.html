@@ -3,18 +3,18 @@
 
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Air Side Operation</title>
-<link rel="icon" href="image/EKFC_LOGO (2).png">
-<link rel="stylesheet" href="shift.js">
-<link rel="ja" href="calendar.js">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Air Side Operation</title>
+    <link rel="icon" href="image/EKFC_LOGO (2).png">
+    <script src="script.js"></script>
+    <link rel="ja" href="calendar.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -25,1126 +25,1252 @@
     background-size: cover;
     background-attachment: fixed;
 ">
-<section class="hero">
-    <!-- Dark Overlay -->
-    <div class="overlay"></div>
-    <div class="container position-relative">
-        <!-- Top Row -->
-        <div class="row pt-4">
-            <div class="col-md-6 col-6">
-                <img src="image/EKFC_LOGO (2).png" class="logo">
-            </div>
-            <div class="col-md-6 col-6 text-end text-white">
-                <div class="top-info">
-                    <i class="fa-regular fa-calendar" ></i>
-                    <span id="cal_date">21 July</span>
-                    &nbsp;&nbsp;
-                    <strong class="Shift" id="shiftText">Shift B</strong>
-
+    <section class="hero">
+        <!-- Dark Overlay -->
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <!-- Top Row -->
+            <div class="row pt-4">
+                <div class="col-md-6 col-6">
+                    <img src="image/EKFC_LOGO (2).png" class="logo">
                 </div>
-                <!-- <strong class="Shift">Prepared BY AOM</strong> -->
-
-
-            </div>
-
-        </div>
-
-      
-
-        <!-- Main Content -->
-        <div class="row align-items-center banner-content">
-            <!-- Left -->
-            <div class="col-lg-7">
-                <h1>
-                    WELCOME TO <br>
-                    AIR SIDE OPERATION
-                </h1>
-                <p>
-                    Together we keep operation safe,
-                    on time and every flight moving.
-
-                </p>
-
-            </div>
-            <!-- Right -->
-
-            <div class="col-lg-5">
-                <div class="contact-card">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h5 class="m-0">Emergency Contact Details</h5>
-                        <div class="phone">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                    </div>
-
-                    <div class="contact-item">
-                        <span>Ramp CO</span>
-                        <span class="contact_number">000 000 000</span>
-                    </div>
-                    <div class="contact-item">
-                        <span>AOM</span>
-                        <span class="contact_number" >000 000 000</span>
-                    </div>
-                    <div class="contact-item">
-                        <span>OM</span>
-                        <span class="contact_number">000 000 000</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<div class="main_update">
-    <div class="update-card">
-        <span class="update-icon">📢</span>
-        <div class="update-content">
-            <h4>ON GOING UPDATE </h4>
-            <p><strong>ROB Inventory</strong> will be conducted from <b>17th</b> to <b>25th</b>. Please ensure all inventory records are updated and completed within the scheduled period.</p>
-        </div>
-    </div>
-</div>
-
-
-<!-- ALT update  -->
-
-
-<!--  -->
-<div class="container my-5">
-    <div class="rtb-wrapper">
-        
-        <!-- Header Section -->
-        <div class="d-flex justify-content-between align-items-center mb-4">
-            <div>
-                <span class="rtb-header-title"> TL | ALT | RTB Point</span>
-            </div>
-            <!-- <a href="#" class="view-all-link">View All RTB Documents</a> -->
-        </div>
-
-        <!-- Carousel -->
-        <div id="rtbCarousel" class="carousel slide" data-bs-ride="carousel">
-            
-            <div class="carousel-inner">
-
-                <!-- SLIDE 1 (Displays Cards 1 & 2) -->
-                <div class="carousel-item active">
-                    <div class="row g-3">
-                        
-                        <!-- Card 1 -->
-                        <div class="col-md-6">
-                            <div class="rtb-card">
-                                <div class="row g-2 align-items-center w-100">
-                                    <div class="col-7">
-                                        <h4 class="rtb-card-title">Wine List Update</h4>
-                                        <div class="rtb-info">
-                                            <p><strong>Effective:- </strong> 16 July 2026</p>
-                                            <p><strong>Aircraft:- </strong> A380 / B777 only CAT 1 -3</p>
-                                            <p><strong>Details:- </strong> Updated Wine Lists in the Business Class seat/console.</p>
-                                        </div>
-                                        <button class="btn-view-img"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#wine_img"
-                                        data-image="image/wine_list">
-                                    <i class="fa-regular fa-image"></i>
-                                    View Image
-                                </button>
-                                    </div>
-                                    <!-- img  -->
-                                    <div class="col-5">
-                                        <div class="rtb-img-container">
-                                            <img src="image/wine_list.jpeg" alt="Wine List">
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Card 2 -->
-
-                        <div class="col-md-6">
-                            <div class="rtb-card">
-                                <div class="row g-2 align-items-center w-100">
-                                    <div class="col-7">
-                                        <h4 class="rtb-card-title">Organic Milk Pack </h4>
-                                        <div class="rtb-info">
-                                            <p><strong>Effective:</strong>July 25th 2026</p>
-                                            <p><strong>Aircraft:</strong> A6E-PA</p>
-                                            <p><strong>Details:</strong> 04 Organic Milk Cartons in Business Class Galley Top. until further Notice</p>
-                                        </div>
-                                        <button class="btn-view-img" data-bs-toggle="modal" data-bs-target="#organic_milk_pack">
-                                            <i class="fa-regular fa-image"></i> View Image
-                                        </button>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="img_mlik_pack">
-                                            <img src="image/organic_milk.jpeg" alt="Udpate ERP">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
+                <div class="col-md-6 col-6 text-end text-white">
+                    <div class="top-info">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span id="cal_date">21 July</span>
+                        &nbsp;&nbsp;
+                        <strong class="Shift" id="shiftText">Shift B</strong>
 
                     </div>
-                </div>
+                    <!-- <strong class="Shift">Prepared BY AOM</strong> -->
 
-                <!-- SLIDE 2 (Displays Cards 3 & 4) -->
-                <div class="carousel-item">
-                    <div class="row g-3">
-<!-- Card 3 -->
-                        <div class="col-md-6">
-                            <div class="rtb-card">
-                                <div class="row g-2 align-items-center w-100">
-                                    <div class="col-7">
-                                        <h4 class="rtb-card-title">Offload Pillow Cover</h4>
-                                        <div class="rtb-info">
-                                            <p><strong>Effective:- </strong> 08th of June</p>
-                                            <p><strong>Aircraft:- </strong> B777 |A380</p>
-                                            <p><strong>Details:- </strong> DNATA will collect all the pillow Cover and kept in Green bag</p>
-                                        </div>
-                                        <button class="btn-view-img" data-bs-toggle="modal" data-bs-target="#pillow_cover">
-                                            <i class="fa-regular fa-image"></i> View Image
-                                        </button>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="rtb-img-container">
-                                            <img src="image/green_bag_pillow_covers.png" alt="Menu Update">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Card 4 -->
-                        
-                        <!-- new -->
-                        <div class="col-md-6">
-                            <div class="rtb-card">
-                                <div class="row g-2 align-items-center w-100">
-                                    <div class="col-7">
-                                        <h4 class="rtb-card-title">Strawberry Festival</h4>
-                                        <div class="rtb-info">
-                                            <p><strong>Effective:- </strong> 16 July 2026</p>
-                                            <p><strong>Aircraft:- </strong> All the <strong><mark class="mark">UK</mark></strong> Sector Flights</p>
-                                            <p><strong>Details:- </strong> Updated from 13 - 31 july 2026 one (01) bottle 500ml welcome drink loaded in chiller FC | BC | PY.</p>
-                                        </div>
-                                        <button class="btn-view-img"
-                                        data-bs-toggle="modal"
-                                        data-bs-target="#s_img"
-                                        data-image="image/straberry">
-                                    <i class="fa-regular fa-image"></i>
-                                    View Image
-                                </button>
-                                    </div>
-                                    <!-- img  -->
-                                    <div class="col-5">
-                                        <div class="s_drink">
-                                            <img src="image/stawberry_image.JPG" alt="s_festival">
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        
-                        
-
-                    </div>
-                </div>
-            </div> 
-
-            <!-- Controls (Arrows) -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#rtbCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#rtbCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </button>
-
-            <!-- Indicators (Dots) -->
-           
-
-        </div>
-
-    </div>
-</div>
-
-<!-- alt image model start  -->
-
-<!-- Wine Modal -->
-<div class="modal fade" id="wine_img" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title">Wine List Updates</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body text-center">
-                <img src="image/wine_list.jpeg" class="img-fluid rounded">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Strawberry Modal -->
-<div class="modal fade" id="s_img" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title">Strawberry Festival</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body text-center">
-                <img src="image/stawberry_image.JPG" class="img-fluid rounded">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- Dnata_pillow_cover -->
-<div class="modal fade" id="pillow_cover" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title">Green Bag Pillow Cover Offload</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body text-center">
-                <img src="image/green_bag_pillow_covers.png" class="img-fluid rounded">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<!-- TL Update -->
-<div class="modal fade" id="organic_milk_pack" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title">Organic Milk Cartons</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body text-center">
-                <img src="image/organic_milk.jpeg" class="img-fluid rounded">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="s_img" tabindex="-1">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title">Strawberry Festival</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-            </div>
-
-            <div class="modal-body text-center">
-                <img src="image/straberry.jpg" class="img-fluid rounded">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-    </div> 
-</div>
-
-<!-- alt model img end  -->
-
-
- <!-- end of alt update -->
-
-<section class="py-5">
-    <div class="container">
-
-        <div class="row g-4">
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-
-                <div class="hot-card">
-
-                    <div class="hot-header">
-                        <i class="fa-solid fa-fire"></i>
-                        HOT TOPIC
-                    </div>
-
-                    <div class="hot-image">
-
-                        <img src="image/cart_falling.png" alt="Cart Falling">
-
-                        <div class="hot-overlay">
-
-                            <h2>Cart Falling Down</h2>
-
-                            <p>
-                                During the departure of EK123 on 17 May, a bar cart fell 
-                                inside the high loader while a staff member was
-                                pushing two half carts together instead of moving them one at a time.
-                            </p>
-
-                            
-
-                        </div>
-
-                    </div>
-                    <br>
-                    <div class="hot-buttons">
-
-                        <a href="#" class="btn btn-dark">
-                            CCTV FOOTAGE
-                        </a>
-
-                        <a href="#" class="btn btn-secondary">
-                            View More Topic
-                        </a>
-
-                    </div>
-                </div>
-            </div>
-
-<!-- Card 2 --> 
-<div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="card">
-
-        <div class="card-header">
-            SAFETY BRIEFING 
-        </div>
-
-        <div class="card-body">
-
-            <ul class="topic-list">
-                <li>
-                    <h5>Cart Falling Prevention</h5>
-                    <h6 class="sub_headings">Be aware of surrounding </h6>
-                </li>
-                <pre></pre>
-                <li>
-                    <h5>Use Equipment Safely </h5>
-                    <h6 class="sub_headings">Always Check before use.</h6>
-                </li>
-                <pre></pre>
-                <li>
-                    <h5>Secure all the Carts and Container </h5>
-                    <h6 class="sub_headings">Double Check Latches  and Locks .</h6>
-                </li>
-              
-                <pre></pre>
-                <li>
-                    <h5> Near Miss</h5  >
-                    <h6 class="sub_headings">Maintain 10 cm Gap between HL & Platform</h6>
-                </li>
-
-                <pre></pre>
-                <li>
-                    <h5>Use Three-Point Contact</h5  >
-                    <h6 class="sub_headings">Maintain three-point contact when climbing ladders or accessing equipment.</h6>
-                </li>
-               
-            </ul>
-
-        </div>
-
-    </div>
-</div>
-
-<!-- Card -->
-<div class="col-lg-4 col-md-6 col-sm-12">
-
-    <div class="card">
-
-        <div class="card-header">
-            OPERATIONAL UPDATES
-
-        </div>
-
-        <div class="card-body">
-
-            <ul class="topic-list">
-
-                <!-- First Update -->
-                <li>
-                    <h5>London Sector - W-Towel in FC Galley 
-
-                        
-
-                    </h5> 
-
-                    <h6 class="sub_headings">
-                        For the next 14 days, extra bundle towels will be loaded in the FC galley top and EY hatrack.
-                    </h6>
-
-                    <p>B777 - 41DE &nbsp;&nbsp;|&nbsp;&nbsp; A380 - 57DE</p>
-                    <button class="img_btn"
-                        data-bs-toggle="modal"
-                        data-bs-target="#towelModal">
-                            Image
-                        </button>
-                  
-                </li>
-
-                <hr>
-
-                <!-- Second Update -->
-                <li>
-                    <h5>Additional Snacks Bags
-
-                        <button class="img_btn_2"
-                        data-bs-toggle="modal"
-                        data-bs-target="#snacksModal">
-                            Image
-                        </button>
-
-                    </h5>
-
-                    <h6 class="sub_headings">
-                        B777: 2 snacks bags &nbsp; | &nbsp;
-                        A350: 2 snacks bags &nbsp; | &nbsp;
-                        A380: 3 snacks bags
-                    </h6>
-                    <hr>
-
-                    <pre>
-
-
-                    </pre>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal fade" id="towelModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title">W-Towel Bundle</h5>
-
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal">
-                </button>
-            </div>
-
-            <div class="modal-body text-center">
-                <img src="image/W_towel.png"
-                     class="img-fluid"
-                     alt="W-Towel">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="snacksModal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-
-            <div class="modal-header">
-                <h5 class="modal-title">Snacks Bag</h5>
-
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal">
-                </button>
-            </div>
-
-            <div class="modal-body text-center">
-                <img src="image/snacks.jpg"
-                     class="img-fluid"
-                     alt="Snacks Bag">
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-        </div>
-    </div>
-</section>
-
-<!-- end of card  -->
-
-
-<!-- second row card start -->
-<section class="py-7">
-    <div class="container">
-
-        <div class="row g-4">
-
-                   
-<!-- Card 2 --> 
- 
-<div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="card">
-
-        <div class="card-header_2">
-            Load Equipment According to 
-            Checklist        
-        </div>
-        <h5 class="para_1">Ensure all the carts containers and loose items are loaded as per provided checklist</h5>
-        <div class="card-body">
-
-            <ul class="topic-list">
-
-                <li>
-                    <h6>Take Pictures of all the loose items in Tab</h6>
-                </li>
-                <pre></pre>
-                <li>
-                    <h6>Verify the Quantity of loose items </h6>
-                </li>
-                <pre></pre>
-                <li>
-                    <h6>Load in correct location </h6>
-                </li>
-                
-                <pre></pre>
-              
-
-                <li>
-                    <h6>Mention Short Items in checklist</h6>
-                </li>
-
-               
-            </ul>
-
-        </div>
-
-    </div>
-</div>
-
-
-
-
-
-<!-- Card 2 --> 
-<div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="card">
-
-        <div class="card-header_3">
-            Safe Marshaling
-            <h6>Aircraft Marshalling Procedures</h6> 
-        </div>
-
-        <div class="card-body">
-
-            <ul class="topic-list">
-
-                <li>
-                    <h6>Maintain 10 cm gap between High Loader and 
-                        aircraft.</h6>
-                </li>
-                <pre></pre>
-                <li>
-                    <h6>10–15 cm gap between side guard rail and 
-                        aircraft door.</h6>
-                    
-                </li>
-                <pre></pre>
-                <li>
-                    <h6>If marshalling is incorrect, re-Marshall before 
-                        docking..</h6>
-                </li>
-                <pre></pre>
-              
-
-                <li>
-                   <h6>Report any damage immediately.</h6>
-                </li>
-
-               
-            </ul>
-            <pre>
-            </pre>
-        </div>
-
-    </div>
-</div>
-
-
-<!-- Card 2 --> 
-<div class="col-lg-4 col-md-6 col-sm-12">
-    <div class="card">
-
-        <div class="card-header_4">
-            NCR Internal & External
-            <h6>Keep all the items in correct location without any mistakes </h6> 
-        </div>
-
-        <div class="card-body">
-
-            <ul class="topic-list">
-
-                <li>
-                    <h6>Sliver Trays not loaded in correct location .</h6>
-                </li>
-                <pre></pre>
-                <li>
-                    <h6>Missing Oven Covers </h6>
-                    
-                </li>
-                <pre></pre>
-                <li>
-                    <h6>Not loaded Tumbler Cups </h6>
-                </li>
-                <pre></pre>
-              
-
-                <li>
-                   <h6>RTB Matress Short</h6>
-                </li>
-                <pre></pre>
-                <li>
-                    <h6>Checklist are Empty</h6>
-                 </li>
-            </ul>
-            <pre>
-            </pre>
-        </div>
-
-    </div>
-</div>
-
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<pre>
-
-
-
-</pre>
-
-
-
-
-<!-- start of hot topic of the week -->
-<div class="container py-5">
-
-    <div class="text-center mb-4">
-        <h1 class="header_mistakes">
-            <i class="fa-solid fa-triangle-exclamation text-danger"></i>
-            SAFETY TOPIC OF THE WEEK
-        </h1>
-
-        <p class="para_2">
-            Review of recent incidents to prevent recurrence and maintain operational safety.
-        </p>
-    </div>
-
-    <div class="safety-card">
-
-        <div class="row g-0">
-
-            <!-- Image -->
-            <div class="col-lg-4">
-
-                <div class="image-box">
-
-                    <img src="image/hls_s.jfif" alt="Safety Topic">
-
-                    <span class="status-badge">
-                        HIGH PRIORITY
-                    </span>
 
                 </div>
 
             </div>
 
-            <!-- Content -->
-            <div class="col-lg-8">
+            <script>
+                function updateShift() {
+                    const now = new Date();
+                    const hour = now.getHours(); // 0-23
 
-                <div class="content-box">
+                    let shift = "";
 
-                    <h2 class="sub_header">
-                        High Loader Stabilizer Not Deployed
-                    </h2>
+                    if (hour >= 0 && hour < 12) {
+                        shift = "Shift A";
+                    } else if (hour >= 12 && hour < 18) {
+                        shift = "Shift B";
+                    } else {
+                        shift = "Shift C";
+                    }
 
-                    <div class="info-grid">
+                    document.getElementById("shiftText").textContent = shift;
+                }
 
-                        <div class="info-item">
-                            <span>Aircraft</span>
-                            <strong>EK324</strong>
-                        </div>
+                // Run when page loads
+                updateShift();
+            </script>
 
-                        <div class="info-item">
-                            <span>Date</span>
-                            <strong>14 July 2026</strong>
-                        </div>
-
-                        <div class="info-item">
-                            <span>Issue</span>
-                            <strong>High Loader Stabilizer</strong>
-                        </div>
-
-                        <div class="info-item">
-                            <span>Risk Level</span>
-                            <strong class="text-danger">High</strong>
-                        </div>
-
-                    </div>
-
-                    <hr>
-
-                    <h5 class="text-success">
-                        <i class="fa-solid fa-circle-check"></i>
-                        Corrective Action
-                    </h5>
-
-                    <p class="action-text">
-
-                        Never ignore the stabilizer warning buzzer or flashing warning light.
-                        Deploy the stabilizers completely and follow the
-                        <span class="sop-badge">SOP</span>
-                        before commencing any loading or unloading operation.
+            <!-- Main Content -->
+            <div class="row align-items-center banner-content">
+                <!-- Left -->
+                <div class="col-lg-7">
+                    <h1>
+                        WELCOME TO <br>
+                        AIR SIDE OPERATION
+                    </h1>
+                    <p>
+                        Together we keep operation safe,
+                        on time and every flight moving.
 
                     </p>
 
                 </div>
+                <!-- Right -->
 
+                <div class="col-lg-5">
+                    <div class="contact-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="m-0">Emergency Contact Details</h5>
+                            <div class="phone">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span>Ramp CO</span>
+                            <span class="contact_number">000 000 000</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>AOM</span>
+                            <span class="contact_number">000 000 000</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>OM</span>
+                            <span class="contact_number">000 000 000</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
+    </section>
 
+
+    <div class="main_update">
+        <div class="update-card">
+            <span class="update-icon">📢</span>
+            <div class="update-content">
+                <h4>ON GOING UPDATE </h4>
+                <p><strong>ROB Inventory</strong> will be conducted from <b>17th</b> to <b>25th</b>. Please ensure all
+                    inventory records are updated and completed within the scheduled period.</p>
+            </div>
+        </div>
     </div>
 
-</div>
- <!-- end of it  -->
 
-<!-- staff details mistakes -->
-<div class="container my-5">
+    <!-- ALT update  -->
 
-    <h4 class="section-title-1 mb-4">
-        Staff Error 
-    </h4>
+    <!-- scond alert  -->
+    <div class="container my-5">
 
-    <div class="row g-4">
-
-        <!-- Card 1 -->
-        <div class="col-lg-6 col-md-6">
-            <div class="tl-card h-100">
-                <div class="tl-header-1">
-                    <span class="tl-badge-1">S1</span>
-                    <h5>Secure Loading</h5>
-                </div>
-
-                <ul class="tl-list-1">
-                    <li>Cart Falling during load / Offload .</li>
-                    <li>Multiple incident of falling on aircraft wing an tarmac</li>
+        <div class="card shadow rounded-3">
+    
+            <!-- Image -->
+            <img src="image/security alert.png"
+                 class="card-img-top"
+                 style="height:450px; object-fit:cover;"
+                 alt="Security Alert">
+    
+            <div class="card-body">
+    
+                <h2 class="text-danger fw-bold text-center">
+                    BIG SECURITY ALERT
+                </h2>
+    
+                <p class="text-center fw-bold">
+                    Security Audit – Effective Until <span class="text-danger">31 July 2026</span>
+                </p>
+    
+                <hr>
+    
+                <h5>Security Audit</h5>
+                <ul>
+                    <li>Airport Pass and Company ID must be visible at all times.</li>
+                    <li>Cooperate with all security inspections and audits.</li>
+                    <li>Report any suspicious person or unattended baggage immediately.</li>
                 </ul>
-            </div>
-        </div>
-
-         <!-- Card 1 -->
-         <div class="col-lg-6 col-md-6">
-            <div class="tl-card h-100">
-                <div class="tl-header-1">
-                    <span class="tl-badge-1">S1</span>
-                    <h5>Pesronal Injury</h5>
-                </div>
-
-                <ul class="tl-list-1">
-                    <li>Not wearing PPE (Safety Golves, Ear Plugs)</li>
-                    <li>Walking while Marshaling</li>
+    
+                <h5 class="mt-4">Important Reminders</h5>
+                <ul>
+                    <li>Do not eat or drink inside the aircraft or HLS.</li>
+                    <li>Do not carry prohibited items such as nail cutters, knives, or weapons.</li>
+                    <li>Do not leave personal belongings or equipment unattended.</li>
                 </ul>
+    
             </div>
+    
         </div>
-        
-
-
-      
-
-
-
-<!-- second row TL mis -->
-
-<div class="container my-5">
-
-    <h4 class="section-title mb-4">
-        TEAM LEADER Error
-    </h4>
-
-    <div class="row g-4">
-
-        <!-- Card 1 -->
-        <div class="col-lg-3 col-md-6">
-            <div class="tl-card h-100">
-                <div class="tl-header">
-                    <span class="tl-badge">TL1</span>
-                    <h5>EK703</h5>
-                </div>
-
-                <ul class="tl-list">
-                    <li>The Team Leader did not order the cabin spray, but staff marked it on the checklist.
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-lg-3 col-md-6">
-            <div class="tl-card h-100">
-                <div class="tl-header">
-                    <span class="tl-badge">TL2</span>
-                    <h5>EK801</h5>
-                </div>
-
-                <ul class="tl-list">
-                    <li>Lounge cart remained in High Loader lift after loading.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-lg-3 col-md-6">
-            <div class="tl-card h-100">
-                <div class="tl-header">
-                    <span class="tl-badge">TL3</span>
-                    <h5>Offload Flights</h5>
-                </div>
-
-                <ul class="tl-list">
-                    <li>Staff details were not updated in offload notes.</li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-lg-3 col-md-6">
-            <div class="tl-card h-100">
-                <div class="tl-header">
-                    <span class="tl-badge">TL4</span>
-                    <h5>Cross Verification</h5>
-                </div>
-
-                <ul class="tl-list">
-                    <li>Galley and High Loader verification not completed.</li>
-                </ul>
-            </div>
-        </div>
-
+    
     </div>
 
-</div>
+    <!-- end of it -->
 
+    <!--  -->
+    <div class="container my-5">
+        <div class="rtb-wrapper">
 
-
-
-<div class="container">
-    <h1>Weekly Summary</h1>
-
-    <h3>Operational Performance</h3>
-    <div class="performance-container" style="color: black; font: 700;">
-      <div class="row g-3">
-        
-        <!-- Card 1: OTP Performance -->
-        <div class="col-md-3 col-sm-6">
-          <div class="kpi-card">
-            <div class="label-title"><h3>OTP Performance</h3></div>
-            <div class="d-flex align-items-center gap-2">
-              <span class="metric-badge badge-green metric-value-lg">100%</span>
-              <div>
-                <div class="trend-text text-dark"><p style="font-size: x-large;" >POSITIVE</p></div>
-                    <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
-              </div>
+            <!-- Header Section -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <span class="rtb-header-title"> TL | ALT | RTB Point</span>
+                </div>
+                <!-- <a href="#" class="view-all-link">View All RTB Documents</a> -->
             </div>
-          </div>
+
+            <!-- Carousel -->
+            <div id="rtbCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <!-- SLIDE 1 (Displays Cards 1 & 2) -->
+                    <div class="carousel-item active">
+                        <div class="row g-3">
+
+                            <!-- Card 1 -->
+                            <div class="col-md-6">
+                                <div class="rtb-card">
+                                    <div class="row g-2 align-items-center w-100">
+                                        <div class="col-7">
+                                            <h4 class="rtb-card-title">Wine List Update</h4>
+                                            <div class="rtb-info">
+                                                <p><strong>Effective:- </strong> 16 July 2026</p>
+                                                <p><strong>Aircraft:- </strong> A380 / B777 only CAT 1 -3</p>
+                                                <p><strong>Details:- </strong> Updated Wine Lists in the Business Class
+                                                    seat/console.</p>
+                                            </div>
+                                            <button class="btn-view-img" data-bs-toggle="modal"
+                                                data-bs-target="#wine_img" data-image="image/wine_list">
+                                                <i class="fa-regular fa-image"></i>
+                                                View Image
+                                            </button>
+                                        </div>
+                                        <!-- img  -->
+                                        <div class="col-5">
+                                            <div class="rtb-img-container">
+                                                <img src="image/wine_list.jpeg" alt="Wine List">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Card 2 -->
+
+                            <div class="col-md-6">
+                                <div class="rtb-card">
+                                    <div class="row g-2 align-items-center w-100">
+                                        <div class="col-7">
+                                            <h4 class="rtb-card-title">Organic Milk Pack </h4>
+                                            <div class="rtb-info">
+                                                <p><strong>Effective:</strong>July 25th 2026</p>
+                                                <p><strong>Aircraft:</strong> A6E-PA</p>
+                                                <p><strong>Details:</strong> 04 Organic Milk Cartons in Business Class
+                                                    Galley Top. until further Notice</p>
+                                            </div>
+                                            <button class="btn-view-img" data-bs-toggle="modal"
+                                                data-bs-target="#organic_milk_pack">
+                                                <i class="fa-regular fa-image"></i> View Image
+                                            </button>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="img_mlik_pack">
+                                                <img src="image/organic_milk.jpeg" alt="Udpate ERP">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <!-- SLIDE 2 (Displays Cards 3 & 4) -->
+                    <div class="carousel-item">
+                        <div class="row g-3">
+                            <!-- Card 3 -->
+                            <div class="col-md-6">
+                                <div class="rtb-card">
+                                    <div class="row g-2 align-items-center w-100">
+                                        <div class="col-7">
+                                            <h4 class="rtb-card-title">Offload Pillow Cover</h4>
+                                            <div class="rtb-info">
+                                                <p><strong>Effective:- </strong> 08th of June</p>
+                                                <p><strong>Aircraft:- </strong> B777 |A380</p>
+                                                <p><strong>Details:- </strong> DNATA will collect all the pillow Cover
+                                                    and kept in Green bag</p>
+                                            </div>
+                                            <button class="btn-view-img" data-bs-toggle="modal"
+                                                data-bs-target="#pillow_cover">
+                                                <i class="fa-regular fa-image"></i> View Image
+                                            </button>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="rtb-img-container">
+                                                <img src="image/green_bag_pillow_covers.png" alt="Menu Update">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+
+                            <!-- new -->
+                            <div class="col-md-6">
+                                <div class="rtb-card">
+                                    <div class="row g-2 align-items-center w-100">
+                                        <div class="col-7">
+                                            <h4 class="rtb-card-title">Strawberry Festival</h4>
+                                            <div class="rtb-info">
+                                                <p><strong>Effective:- </strong> 16 July 2026</p>
+                                                <p><strong>Aircraft:- </strong> All the <strong><mark
+                                                            class="mark">UK</mark></strong> Sector Flights</p>
+                                                <p><strong>Details:- </strong> Updated from 13 - 31 july 2026 one (01)
+                                                    bottle 500ml welcome drink loaded in chiller FC | BC | PY.</p>
+                                            </div>
+                                            <button class="btn-view-img" data-bs-toggle="modal" data-bs-target="#s_img"
+                                                data-image="image/straberry">
+                                                <i class="fa-regular fa-image"></i>
+                                                View Image
+                                            </button>
+                                        </div>
+                                        <!-- img  -->
+                                        <div class="col-5">
+                                            <div class="s_drink">
+                                                <img src="image/stawberry_image.JPG" alt="s_festival">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls (Arrows) -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#rtbCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#rtbCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+
+                <!-- Indicators (Dots) -->
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- alt image model start  -->
+
+    <!-- Wine Modal -->
+    <div class="modal fade" id="wine_img" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Wine List Updates</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="image/wine_list.jpeg" class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Strawberry Modal -->
+    <div class="modal fade" id="s_img" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Strawberry Festival</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="image/stawberry_image.JPG" class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Dnata_pillow_cover -->
+    <div class="modal fade" id="pillow_cover" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Green Bag Pillow Cover Offload</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="image/green_bag_pillow_covers.png" class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- TL Update -->
+    <div class="modal fade" id="organic_milk_pack" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Organic Milk Cartons</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="image/organic_milk.jpeg" class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="s_img" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Strawberry Festival</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="image/straberry.jpg" class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <!-- alt model img end  -->
+
+
+    <!-- end of alt update -->
+
+    <section class="py-5">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="hot-card">
+
+                        <div class="hot-header">
+                            <i class="fa-solid fa-fire"></i>
+                            HOT TOPIC
+                        </div>
+
+                        <div class="hot-image">
+
+                            <img src="image/cart_falling.png" alt="Cart Falling">
+
+                            <div class="hot-overlay">
+
+                                <h2>Cart Falling Down</h2>
+
+                                <p>
+                                    During the departure of EK123 on 17 May, a bar cart fell
+                                    inside the high loader while a staff member was
+                                    pushing two half carts together instead of moving them one at a time.
+                                </p>
+
+
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="hot-buttons">
+
+                            <a href="#" class="btn btn-dark">
+                                CCTV FOOTAGE
+                            </a>
+
+                            <a href="#" class="btn btn-secondary">
+                                View More Topic
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+
+                        <div class="card-header">
+                            SAFETY BRIEFING
+                        </div>
+
+                        <div class="card-body">
+
+                            <ul class="topic-list">
+                                <li>
+                                    <h5>Cart Falling Prevention</h5>
+                                    <h6 class="sub_headings">Be aware of surrounding </h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h5>Use Equipment Safely </h5>
+                                    <h6 class="sub_headings">Always Check before use.</h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h5>Secure all the Carts and Container </h5>
+                                    <h6 class="sub_headings">Double Check Latches and Locks .</h6>
+                                </li>
+
+                                <pre></pre>
+                                <li>
+                                    <h5> Near Miss</h5>
+                                    <h6 class="sub_headings">Maintain 10 cm Gap between HL & Platform</h6>
+                                </li>
+
+                                <pre></pre>
+                                <li>
+                                    <h5>Use Three-Point Contact</h5>
+                                    <h6 class="sub_headings">Maintain three-point contact when climbing ladders or
+                                        accessing equipment.</h6>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="card">
+
+                        <div class="card-header">
+                            OPERATIONAL UPDATES
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <ul class="topic-list">
+
+                                <!-- First Update -->
+                                <li>
+                                    <h5>London Sector - W-Towel in FC Galley
+
+
+
+                                    </h5>
+
+                                    <h6 class="sub_headings">
+                                        For the next 14 days, extra bundle towels will be loaded in the FC galley top
+                                        and EY hatrack.
+                                    </h6>
+
+                                    <p>B777 - 41DE &nbsp;&nbsp;|&nbsp;&nbsp; A380 - 57DE</p>
+                                    <button class="img_btn" data-bs-toggle="modal" data-bs-target="#towelModal">
+                                        Image
+                                    </button>
+
+                                </li>
+
+                                <hr>
+
+                                <!-- Second Update -->
+                                <li>
+                                    <h5>Additional Snacks Bags
+
+                                        <button class="img_btn_2" data-bs-toggle="modal" data-bs-target="#snacksModal">
+                                            Image
+                                        </button>
+
+                                    </h5>
+
+                                    <h6 class="sub_headings">
+                                        B777: 2 snacks bags &nbsp; | &nbsp;
+                                        A350: 2 snacks bags &nbsp; | &nbsp;
+                                        A380: 3 snacks bags
+                                    </h6>
+                                    <hr>
+
+                                    <pre>
+
+
+                    </pre>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="towelModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">W-Towel Bundle</h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                </button>
+                            </div>
+
+                            <div class="modal-body text-center">
+                                <img src="image/W_towel.png" class="img-fluid" alt="W-Towel">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="snacksModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">Snacks Bag</h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                </button>
+                            </div>
+
+                            <div class="modal-body text-center">
+                                <img src="image/snacks.jpg" class="img-fluid" alt="Snacks Bag">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end of card  -->
+
+
+    <!-- second row card start -->
+    <section class="py-7">
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- Card 2 -->
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+
+                        <div class="card-header_2">
+                            Load Equipment According to
+                            Checklist
+                        </div>
+                        <h5 class="para_1">Ensure all the carts containers and loose items are loaded as per provided
+                            checklist</h5>
+                        <div class="card-body">
+
+                            <ul class="topic-list">
+
+                                <li>
+                                    <h6>Take Pictures of all the loose items in Tab</h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>Verify the Quantity of loose items </h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>Load in correct location </h6>
+                                </li>
+
+                                <pre></pre>
+
+
+                                <li>
+                                    <h6>Mention Short Items in checklist</h6>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+
+                        <div class="card-header_3">
+                            Safe Marshaling
+                            <h6>Aircraft Marshalling Procedures</h6>
+                        </div>
+
+                        <div class="card-body">
+
+                            <ul class="topic-list">
+
+                                <li>
+                                    <h6>Maintain 10 cm gap between High Loader and
+                                        aircraft.</h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>10–15 cm gap between side guard rail and
+                                        aircraft door.</h6>
+
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>If marshalling is incorrect, re-Marshall before
+                                        docking..</h6>
+                                </li>
+                                <pre></pre>
+
+
+                                <li>
+                                    <h6>Report any damage immediately.</h6>
+                                </li>
+
+
+                            </ul>
+                            <pre>
+            </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+
+                        <div class="card-header_4">
+                            NCR Internal & External
+                            <h6>Keep all the items in correct location without any mistakes </h6>
+                        </div>
+
+                        <div class="card-body">
+
+                            <ul class="topic-list">
+
+                                <li>
+                                    <h6>Sliver Trays not loaded in correct location .</h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>Missing Oven Covers </h6>
+
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>Not loaded Tumbler Cups </h6>
+                                </li>
+                                <pre></pre>
+
+
+                                <li>
+                                    <h6>RTB Matress Short</h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>Checklist are Empty</h6>
+                                </li>
+                            </ul>
+                            <pre>
+            </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
         </div>
 
 
-        <div class="col-md-3 col-sm-6">
-            <div class="kpi-card">
-              <div class="label-title"><h3>Personal Injury</h3></div>
-              <div class="d-flex align-items-center gap-2">
-                <span class="metric-badge badge-green metric-value-lg">3</span>
-                <div>
-                  <div class="trend-text text-dark"><p style="font-size: x-large;">POSITIVE</p></div>
-                  <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <pre>
+
+
+
+</pre>
+
+
+
+
+        <!-- start of hot topic of the week -->
+        <div class="container py-5">
+
+            <div class="text-center mb-4">
+                <h1 class="header_mistakes">
+                    <i class="fa-solid fa-triangle-exclamation text-danger"></i>
+                    SAFETY TOPIC OF THE WEEK
+                </h1>
+
+                <p class="para_2">
+                    Review of recent incidents to prevent recurrence and maintain operational safety.
+                </p>
+            </div>
+
+            <div class="safety-card">
+
+                <div class="row g-0">
+
+                    <!-- Image -->
+                    <div class="col-lg-4">
+
+                        <div class="image-box">
+
+                            <img src="image/hls_s.jfif" alt="Safety Topic">
+
+                            <span class="status-badge">
+                                HIGH PRIORITY
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-lg-8">
+
+                        <div class="content-box">
+
+                            <h2 class="sub_header">
+                                High Loader Stabilizer Not Deployed
+                            </h2>
+
+                            <div class="info-grid">
+
+                                <div class="info-item">
+                                    <span>Aircraft</span>
+                                    <strong>EK324</strong>
+                                </div>
+
+                                <div class="info-item">
+                                    <span>Date</span>
+                                    <strong>14 July 2026</strong>
+                                </div>
+
+                                <div class="info-item">
+                                    <span>Issue</span>
+                                    <strong>High Loader Stabilizer</strong>
+                                </div>
+
+                                <div class="info-item">
+                                    <span>Risk Level</span>
+                                    <strong class="text-danger">High</strong>
+                                </div>
+
+                            </div>
+
+                            <hr>
+
+                            <h5 class="text-success">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Corrective Action
+                            </h5>
+
+                            <p class="action-text">
+
+                                Never ignore the stabilizer warning buzzer or flashing warning light.
+                                Deploy the stabilizers completely and follow the
+                                <span class="sop-badge">SOP</span>
+                                before commencing any loading or unloading operation.
+
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
-              </div>
+
             </div>
-          </div>
+
+        </div>
+        <!-- end of it  -->
+
+        <!-- staff details mistakes -->
+        <div class="container my-5">
+
+            <h4 class="section-title-1 mb-4">
+                Staff Error
+            </h4>
+
+            <div class="row g-4">
+
+                <!-- Card 1 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="tl-card h-100">
+                        <div class="tl-header-1">
+                            <span class="tl-badge-1">S1</span>
+                            <h5>Secure Loading</h5>
+                        </div>
+
+                        <ul class="tl-list-1">
+                            <li>Cart Falling during load / Offload .</li>
+                            <li>Multiple incident of falling on aircraft wing an tarmac</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 1 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="tl-card h-100">
+                        <div class="tl-header-1">
+                            <span class="tl-badge-1">S1</span>
+                            <h5>Pesronal Injury</h5>
+                        </div>
+
+                        <ul class="tl-list-1">
+                            <li>Not wearing PPE (Safety Golves, Ear Plugs)</li>
+                            <li>Walking while Marshaling</li>
+                        </ul>
+                    </div>
+                </div>
 
 
-          <div class="col-md-3 col-sm-6">
-            <div class="kpi-card">
-              <div class="label-title"><h3>Near Miss</h3></div>
-              <div class="d-flex align-items-center gap-2">
-                <span class="metric-badge badge-green metric-value-lg">3</span>
-                <div>
-                  <div class="trend-text text-dark"><p style="font-size: x-large;">Negative</p></div>
-                  <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
+
+
+
+
+
+                <!-- second row TL mis -->
+
+                <div class="container my-5">
+
+                    <h4 class="section-title mb-4">
+                        TEAM LEADER Error
+                    </h4>
+
+                    <div class="row g-4">
+
+                        <!-- Card 1 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tl-card h-100">
+                                <div class="tl-header">
+                                    <span class="tl-badge">TL1</span>
+                                    <h5>EK703</h5>
+                                </div>
+
+                                <ul class="tl-list">
+                                    <li>The Team Leader did not order the cabin spray, but staff marked it on the
+                                        checklist.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tl-card h-100">
+                                <div class="tl-header">
+                                    <span class="tl-badge">TL2</span>
+                                    <h5>EK801</h5>
+                                </div>
+
+                                <ul class="tl-list">
+                                    <li>Lounge cart remained in High Loader lift after loading.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tl-card h-100">
+                                <div class="tl-header">
+                                    <span class="tl-badge">TL3</span>
+                                    <h5>Offload Flights</h5>
+                                </div>
+
+                                <ul class="tl-list">
+                                    <li>Staff details were not updated in offload notes.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tl-card h-100">
+                                <div class="tl-header">
+                                    <span class="tl-badge">TL4</span>
+                                    <h5>Cross Verification</h5>
+                                </div>
+
+                                <ul class="tl-list">
+                                    <li>Galley and High Loader verification not completed.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
 
                 </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col-md-3 col-sm-6">
-            <div class="kpi-card">
-              <div class="label-title"><h3>Staff and TL Mistake</h3></div>
-              <div class="d-flex align-items-center gap-2">
-                <span class="metric-badge badge-green metric-value-lg">10</span>
-                <div>
-                  <div class="trend-text text-dark"><p style="font-size: x-large;">Negative</p></div>
-                  <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
-
-                </div>
-              </div>
-            </div>
-          </div>
-        
-    </div>
-  </div>
-
-
-<!--  -->
 
 
 
 
+                <div class="container">
+                    <h1>Weekly Summary</h1>
+
+                    <h3>Operational Performance</h3>
+                    <div class="performance-container" style="color: black; font: 700;">
+                        <div class="row g-3">
+
+                            <!-- Card 1: OTP Performance -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="kpi-card">
+                                    <div class="label-title">
+                                        <h3>OTP Performance</h3>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="metric-badge badge-green metric-value-lg">100%</span>
+                                        <div>
+                                            <div class="trend-text text-dark">
+                                                <p style="font-size: x-large;">POSITIVE</p>
+                                            </div>
+                                            <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
 
-<pre>
+                            <div class="col-md-3 col-sm-6">
+                                <div class="kpi-card">
+                                    <div class="label-title">
+                                        <h3>Personal Injury</h3>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="metric-badge badge-green metric-value-lg">3</span>
+                                        <div>
+                                            <div class="trend-text text-dark">
+                                                <p style="font-size: x-large;">POSITIVE</p>
+                                            </div>
+                                            <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 col-sm-6">
+                                <div class="kpi-card">
+                                    <div class="label-title">
+                                        <h3>Near Miss</h3>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="metric-badge badge-green metric-value-lg">3</span>
+                                        <div>
+                                            <div class="trend-text text-dark">
+                                                <p style="font-size: x-large;">Negative</p>
+                                            </div>
+                                            <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 col-sm-6">
+                                <div class="kpi-card">
+                                    <div class="label-title">
+                                        <h3>Staff and TL Mistake</h3>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="metric-badge badge-green metric-value-lg">10</span>
+                                        <div>
+                                            <div class="trend-text text-dark">
+                                                <p style="font-size: x-large;">Negative</p>
+                                            </div>
+                                            <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <!--  -->
+
+
+
+
+
+
+                    <pre>
 </pre>
 
 
 
 
 
-<hr>
-<h2 class="tl_header">Team Leader Update Sheet</h2>
+                    <hr>
+                    <h2 class="tl_header">Team Leader Update Sheet</h2>
 
-<div class="container my-5">
-    <div class="card shadow-lg border-0 rounded-4">
+                    <div class="container my-5">
+                        <div class="card shadow-lg border-0 rounded-4">
 
-        <div class="form_card">
-            <h3 class="mb-0">
-                <i class="fa-solid fa-users"></i>
-                Team Leader Briefing ERP Update Form
-            </h3>
-        </div>
+                            <div class="form_card">
+                                <h3 class="mb-0">
+                                    <i class="fa-solid fa-users"></i>
+                                    Team Leader Briefing ERP Update Form
+                                </h3>
+                            </div>
 
-        <div class="card-body">
+                            <div class="card-body">
+                                <form id="myForm">
 
-            <form>
+                                    <div class="row g-3">
 
-                <div class="row g-3">
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-bold">Date</label>
+                                            <input type="date" id="date" class="form-control" required>
+                                        </div>
 
-                    <div class="col-md-4">
-                        <label class="form-label fw-bold">Date</label>
-                        <input type="date" id="date" class="form-control">
+                                    </div>
+
+                                    <hr class="my-4">
+
+                                    <h5 class="mb-3">
+                                        <i class="fa-solid fa-id-badge"></i>
+                                        Team Leader Shift Briefing Update
+                                    </h5>
+
+                                    <div class="row g-3">
+
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl1"
+                                                placeholder="TL ERP. 1"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl2"
+                                                placeholder="TL ERP. 2"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl3"
+                                                placeholder="TL ERP. 3"></div>
+
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl4"
+                                                placeholder="TL ERP. 4"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl5"
+                                                placeholder="TL ERP. 5"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl6"
+                                                placeholder="TL ERP. 6"></div>
+
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl7"
+                                                placeholder="TL ERP. 7"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl8"
+                                                placeholder="TL ERP. 8"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl9"
+                                                placeholder="TL ERP. 9"></div>
+
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl10"
+                                                placeholder="TL ERP. 10"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl11"
+                                                placeholder="TL ERP. 11"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl12"
+                                                placeholder="TL ERP. 12"></div>
+
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl13"
+                                                placeholder="TL ERP. 13"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl14"
+                                                placeholder="TL ERP. 14"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl15"
+                                                placeholder="TL ERP. 15"></div>
+
+                                    </div>
+
+                                    <hr class="my-4">
+
+                                    <div class="text-end">
+
+                                        <button type="reset" class="btn btn-outline-secondary me-2">
+                                            <i class="fa-solid fa-rotate-left"></i>
+                                            Reset
+                                        </button>
+
+                                        <button type="submit" class="submit_btn">
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                            Submit
+                                        </button>
+
+                                    </div>
+
+                                </form>
+                            </div>
+
+                        </div>
                     </div>
 
+                    <script>
+                        const scriptURL = "https://script.google.com/macros/s/AKfycby-X2zX73KtNULj17alot91K6IqnWUUqncjBX0fIxXeTF1NcgvqFwuIxX-IfktFpWgHGw/exec";
 
-                </div>
+                        document.getElementById("myForm").addEventListener("submit", function (e) {
 
-                <hr class="my-4">
+                            e.preventDefault();
 
-                <h5 class="mb-3">
-                    <i class="fa-solid fa-id-badge"></i>
-                    Team Leader Shift Briefing Update
-                </h5>
+                            const data = {
 
-                <div class="row g-3">
+                                date: document.getElementById("date").value,
 
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 1"></div>
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 2"></div>
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 3"></div>
+                                tl1: document.getElementById("tl1").value,
+                                tl2: document.getElementById("tl2").value,
+                                tl3: document.getElementById("tl3").value,
+                                tl4: document.getElementById("tl4").value,
+                                tl5: document.getElementById("tl5").value,
+                                tl6: document.getElementById("tl6").value,
+                                tl7: document.getElementById("tl7").value,
+                                tl8: document.getElementById("tl8").value,
+                                tl9: document.getElementById("tl9").value,
+                                tl10: document.getElementById("tl10").value,
+                                tl11: document.getElementById("tl11").value,
+                                tl12: document.getElementById("tl12").value,
+                                tl13: document.getElementById("tl13").value,
+                                tl14: document.getElementById("tl14").value,
+                                tl15: document.getElementById("tl15").value
+                            };
 
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 4"></div>
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 5"></div>
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 6"></div>
+                            fetch(scriptURL, {
+                                method: "POST",
+                                body: JSON.stringify(data)
+                            })
+                                .then(response => response.json())
+                                .then(data => {
+                                    alert("Data Saved Successfully ✅");
+                                    document.getElementById("myForm").reset();
+                                })
+                                .catch(error => {
+                                    console.error(error);
+                                    alert("Error Saving Data ❌");
+                                });
 
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 7"></div>
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 8"></div>
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 9"></div>
+                        });
+                    </script>
 
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 10"></div>
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 11"></div>
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 12"></div>
-
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 13"></div>
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 14"></div>
-                    <div class="col-md-4"><input type="text" class="form-control" id="tl1" placeholder="TL ERP. 15"></div>
-
-                </div>
-
-                <hr class="my-4">
-
-                <div class="mb-3">
-                    <label class="form-label fw-bold">Remarks</label>
-                    <textarea class="form-control" rows="4"
-                        placeholder="Enter any comments..."></textarea>
-                </div>
-
-                <div class="text-end">
-
-                    <button type="reset" class="btn btn-outline-secondary me-2">
-                        <i class="fa-solid fa-rotate-left"></i>
-                        Reset
-                    </button>
-
-                    <button type="submit" class="submit_btn">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        Submit
-                    </button>
-
-                </div>
-
-            </form>
-
-        </div>
-
-    </div>
-</div>
-
-
-<hr>
-<h3 style="text-align: center; font-size: x-large;">AIRSIDE OPERATION</h3>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+                    <hr>
+                    <h3 style="text-align: center; font-size: x;">AIRSIDE OPERATION</h3>
+                    <!-- Bootstrap JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

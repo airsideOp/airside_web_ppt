@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-    
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +18,7 @@
 
 </head>
 
-<body style="
+<body  class="page_load" style="
     background-image: url('image/bg_img.avif');
     background-repeat: no-repeat;
     background-position: center;
@@ -39,7 +38,7 @@
                     <div class="top-info">
                         <i class="fa-regular fa-calendar"></i>
                         <span id="cal_date"></span>
-                        
+
                         <!-- java script code for date -->
                         <script>
 
@@ -57,8 +56,8 @@
 
                             updateDate();
                         </script>
-                         <!-- end of code date -->
-                        
+                        <!-- end of code date -->
+
                         &nbsp;&nbsp;
                         <strong class="Shift" id="shiftText">Shift B</strong>
 
@@ -69,7 +68,7 @@
                 </div>
 
             </div>
-<!-- SHIFT CODE START -->
+            <!-- SHIFT CODE START -->
             <script>
                 function updateShift() {
                     const now = new Date();
@@ -142,147 +141,155 @@
         <div class="update-card">
             <span class="update-icon">📢</span>
             <div class="update-content">
-                <h4>ON GOING UPDATE </h4>
+                <!-- <h4>ON GOING UPDATE </h4>
                 <p><strong>ROB Inventory</strong> will be conducted from <b>17th</b> to <b>25th</b>. Please ensure all
                     inventory records are updated and completed within the scheduled period.</p>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ALT update  -->
-
-    <!-- scond alert  -->
-    <div class="container my-5">
-
-        <div class="card shadow rounded-3">
-
-            <!-- Image -->
-            <img src="image/security_banner_img.jpg" class="card-img-top" style="height:450px; object-fit:cover;"
-                alt="Security Alert">
-
-            <div class="card-body">
-
-                <h2 class="text-danger fw-bold text-center">
-                    BIG SECURITY ALERT
-                </h2>
-
-                <p class="text-center fw-bold">
-                    Security Audit – Effective Until <span class="text-danger">31 July 2026</span>
+            </div> -->
+                <h4>ON GOING UPDATE</h4>
+                <p>
+                    <strong style="font-size: larger;">Team Leader took an extra 6 minutes to complete aircraft
+                    </strong>
+                    The reason was not informed or mentioned in the comments.
                 </p>
+            </div>
+        </div>
 
-                <hr>
 
-                <h5>Security Audit</h5>
-                <ul>
-                    <li>Airport Pass and Company ID must be visible at all times.</li>
-                    <li>Cooperate with all security inspections and audits.</li>
-                    <li>Report any suspicious person or unattended baggage immediately.</li>
-                </ul>
+        <!-- ALT update  -->
 
-                <h5 class="mt-4">Important Reminders</h5>
-                <ul>
-                    <li>Do not eat or drink inside the aircraft or HLS.</li>
-                    <li>Do not carry prohibited items such as nail cutters, knives, or weapons.</li>
-                    <li>Do not leave personal belongings or equipment unattended.</li>
-                </ul>
+        <!-- scond alert  -->
+        <div class="container my-5">
+
+            <div class="card shadow rounded-3">
+
+                <!-- Image -->
+                <img src="image/security_banner_img.jpg" class="card-img-top" style="height:450px; object-fit:cover;"
+                    alt="Security Alert">
+
+                <div class="card-body">
+
+                    <h2 class="text-danger fw-bold text-center">
+                        BIG SECURITY ALERT
+                    </h2>
+
+                    <p class="text-center fw-bold">
+                        Security Audit – Effective Until <span class="text-danger">31 July 2026</span>
+                    </p>
+
+                    <hr>
+
+                    <h5>Security Audit</h5>
+                    <ul>
+                        <li>Airport Pass and Company ID must be visible at all times.</li>
+                        <li>Cooperate with all security inspections and audits.</li>
+                        <li>Report any suspicious person or unattended baggage immediately.</li>
+                    </ul>
+
+                    <h5 class="mt-4">Important Reminders</h5>
+                    <ul>
+                        <li>Do not eat or drink inside the aircraft or HLS.</li>
+                        <li>Do not carry prohibited items such as nail cutters, knives, or weapons.</li>
+                        <li>Do not leave personal belongings or equipment unattended.</li>
+                    </ul>
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
+        <!-- end of it -->
 
-    <!-- end of it -->
+        <!--  -->
+        <div class="container my-5">
+            <div class="rtb-wrapper">
 
-    <!--  -->
-    <div class="container my-5">
-        <div class="rtb-wrapper">
-
-            <!-- Header Section -->
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <div>
-                    <span class="rtb-header-title"> TL | ALT | RTB Point</span>
-                </div>
-                <!-- <a href="#" class="view-all-link">View All RTB Documents</a> -->
-            </div>
-
-            <!-- Carousel -->
-            <div id="rtbCarousel" class="carousel slide" data-bs-ride="carousel">
-
-                <div class="carousel-inner">
-
-                    <!-- SLIDE 1 (Displays Cards 1 & 2) -->
-                    <div class="carousel-item active">
-                        <div class="row g-3">
-
-                            <!-- Card 1 -->
-                            <div class="col-md-6">
-                                <div class="rtb-card">
-                                    <div class="row g-2 align-items-center w-100">
-                                        <div class="col-7">
-                                            <h4 class="rtb-card-title">Wine List Update</h4>
-                                            <div class="rtb-info">
-                                                <p><strong>Effective:- </strong> 16 July 2026</p>
-                                                <p><strong>Aircraft:- </strong> A380 / B777 only CAT 1 -3</p>
-                                                <p><strong>Details:- </strong> Updated Wine Lists in the Business Class
-                                                    seat/console.</p>
-                                            </div>
-                                            <button class="btn-view-img" data-bs-toggle="modal"
-                                                data-bs-target="#wine_img" data-image="image/wine_list">
-                                                <i class="fa-regular fa-image"></i>
-                                                View Image
-                                            </button>
-                                        </div>
-                                        <!-- img  -->
-                                        <div class="col-5">
-                                            <div class="rtb-img-container">
-                                                <img src="image/wine_list.jpeg" alt="Wine List">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Card 2 -->
-
-                            <div class="col-md-6">
-                                <div class="rtb-card">
-                                    <div class="row g-2 align-items-center w-100">
-                                        <div class="col-7">
-                                            <h4 class="rtb-card-title">Organic Milk Pack </h4>
-                                            <div class="rtb-info">
-                                                <p><strong>Effective:</strong>July 25th 2026</p>
-                                                <p><strong>Aircraft:</strong> A6E-PA</p>
-                                                <p><strong>Details:</strong> 04 Organic Milk Cartons in Business Class
-                                                    Galley Top. until further Notice</p>
-                                            </div>
-                                            <button class="btn-view-img" data-bs-toggle="modal"
-                                                data-bs-target="#organic_milk_pack">
-                                                <i class="fa-regular fa-image"></i> View Image
-                                            </button>
-                                        </div>
-                                        <div class="col-5">
-                                            <div class="img_mlik_pack">
-                                                <img src="image/organic_milk.jpeg" alt="Udpate ERP">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
+                <!-- Header Section -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <span class="rtb-header-title"> TL | ALT | RTB Point</span>
                     </div>
+                    <!-- <a href="#" class="view-all-link">View All RTB Documents</a> -->
+                </div>
 
-                    <!-- SLIDE 2 (Displays Cards 3 & 4) -->
-                    <div class="carousel-item">
-                        <div class="row g-3">
-                            <!-- Card 3 -->
-                            <div class="col-md-6">
+                <!-- Carousel -->
+                <div id="rtbCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                        <!-- SLIDE 1 (Displays Cards 1 & 2) -->
+                        <div class="carousel-item active">
+                            <div class="row g-3">
+
+                                <!-- Card 1 -->
+                                <div class="col-md-6">
+                                    <div class="rtb-card">
+                                        <div class="row g-2 align-items-center w-100">
+                                            <div class="col-7">
+                                                <h4 class="rtb-card-title">Wine List Update</h4>
+                                                <div class="rtb-info">
+                                                    <p><strong>Effective:- </strong> 16 July 2026</p>
+                                                    <p><strong>Aircraft:- </strong> A380 / B777 only CAT 1 -3</p>
+                                                    <p><strong>Details:- </strong> Updated Wine Lists in the Business
+                                                        Class
+                                                        seat/console.</p>
+                                                </div>
+                                                <button class="btn-view-img" data-bs-toggle="modal"
+                                                    data-bs-target="#wine_img" data-image="image/wine_list">
+                                                    <i class="fa-regular fa-image"></i>
+                                                    View Image
+                                                </button>
+                                            </div>
+                                            <!-- img  -->
+                                            <div class="col-5">
+                                                <div class="rtb-img-container">
+                                                    <img src="image/wine_list.jpeg" alt="Wine List">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Card 2 -->
+
+                                <div class="col-md-6">
+                                    <div class="rtb-card">
+                                        <div class="row g-2 align-items-center w-100">
+                                            <div class="col-7">
+                                                <h4 class="rtb-card-title">Organic Milk Pack </h4>
+                                                <div class="rtb-info">
+                                                    <p><strong>Effective:</strong>July 25th 2026</p>
+                                                    <p><strong>Aircraft:</strong> A6E-PA</p>
+                                                    <p><strong>Details:</strong> 04 Organic Milk Cartons in Business
+                                                        Class
+                                                        Galley Top. until further Notice</p>
+                                                </div>
+                                                <button class="btn-view-img" data-bs-toggle="modal"
+                                                    data-bs-target="#organic_milk_pack">
+                                                    <i class="fa-regular fa-image"></i> View Image
+                                                </button>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="img_mlik_pack">
+                                                    <img src="image/organic_milk.jpeg" alt="Udpate ERP">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 2 (Displays Cards 3 & 4) -->
+                        <div class="carousel-item">
+                            <div class="row g-3">
+                                <!-- Card 3 -->
+                                <!-- <div class="col-md-6">
                                 <div class="rtb-card">
                                     <div class="row g-2 align-items-center w-100">
                                         <div class="col-7">
@@ -305,104 +312,135 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <!-- Card 4 -->
-
-                            <!-- new -->
-                            <div class="col-md-6">
-                                <div class="rtb-card">
-                                    <div class="row g-2 align-items-center w-100">
-                                        <div class="col-7">
-                                            <h4 class="rtb-card-title">Strawberry Festival</h4>
-                                            <div class="rtb-info">
-                                                <p><strong>Effective:- </strong> 16 July 2026</p>
-                                                <p><strong>Aircraft:- </strong> All the <strong><mark
-                                                            class="mark">UK</mark></strong> Sector Flights</p>
-                                                <p><strong>Details:- </strong> Updated from 13 - 31 july 2026 one (01)
-                                                    bottle 500ml welcome drink loaded in chiller FC | BC | PY.</p>
+                                <div class="col-md-6">
+                                    <div class="rtb-card">
+                                        <div class="row g-2 align-items-center w-100">
+                                            <div class="col-7">
+                                                <h4 class="rtb-card-title">Additional 6pc of JC Mattress in Hattrack
+                                                </h4>
+                                                <div class="rtb-info">
+                                                    <p><strong>Effective:- </strong> 29th of July</p>
+                                                    <p><strong>Aircraft:- </strong> All in <mark>UK</mark> Sector flight
+                                                    </p>
+                                                    <p><strong>Details:- </strong> In all the UK Sector Flight there
+                                                        will be a 6pc of JC Mattres sLoaded until further Notice</p>
+                                                </div>
+                                                <button class="btn-view-img" data-bs-toggle="modal"
+                                                    data-bs-target="#pillow_cover">
+                                                    <i class="fa-regular fa-image"></i> View Image
+                                                </button>
                                             </div>
-                                            <button class="btn-view-img" data-bs-toggle="modal" data-bs-target="#s_img"
-                                                data-image="image/straberry">
-                                                <i class="fa-regular fa-image"></i>
-                                                View Image
-                                            </button>
-                                        </div>
-                                        <!-- img  -->
-                                        <div class="col-5">
-                                            <div class="s_drink">
-                                                <img src="image/stawberry_image.JPG" alt="s_festival">
+                                            <div class="col-5">
+                                                <div class="jc_mattress_img">
+                                                    <img src="image/jc mattress.png" alt="Menu Update">
+                                                </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
+
+                                <!-- Card 4 -->
+
+                                <!-- new -->
+                                <div class="col-md-6">
+                                    <div class="rtb-card">
+                                        <div class="row g-2 align-items-center w-100">
+                                            <div class="col-7">
+                                                <h4 class="rtb-card-title">Strawberry Festival</h4>
+                                                <div class="rtb-info">
+                                                    <p><strong>Effective:- </strong> 16 July 2026</p>
+                                                    <p><strong>Aircraft:- </strong> All the <strong><mark
+                                                                class="mark">UK</mark></strong> Sector Flights</p>
+                                                    <p><strong>Details:- </strong> Updated from 13 - 31 july 2026 one
+                                                        (01)
+                                                        bottle 500ml welcome drink loaded in chiller FC | BC | PY.</p>
+                                                </div>
+                                                <button class="btn-view-img" data-bs-toggle="modal"
+                                                    data-bs-target="#s_img" data-image="image/straberry">
+                                                    <i class="fa-regular fa-image"></i>
+                                                    View Image
+                                                </button>
+                                            </div>
+                                            <!-- img  -->
+                                            <div class="col-5">
+                                                <div class="s_drink">
+                                                    <img src="image/stawberry_image.JPG" alt="s_festival">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
                             </div>
-
-
-
                         </div>
                     </div>
-                </div>
 
-                <!-- Controls (Arrows) -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#rtbCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#rtbCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                </button>
+                    <!-- Controls (Arrows) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#rtbCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#rtbCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
 
-                <!-- Indicators (Dots) -->
+                    <!-- Indicators (Dots) -->
 
 
-            </div>
-
-        </div>
-    </div>
-
-    <!-- alt image model start  -->
-
-    <!-- Wine Modal -->
-    <div class="modal fade" id="wine_img" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <h5 class="modal-title">Wine List Updates</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-
-                <div class="modal-body text-center">
-                    <img src="image/wine_list.jpeg" class="img-fluid rounded">
                 </div>
 
             </div>
         </div>
-    </div>
 
+        <!-- alt image model start  -->
 
+        <!-- Wine Modal -->
+        <div class="modal fade" id="wine_img" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
 
-    <!-- Strawberry Modal -->
-    <div class="modal fade" id="s_img" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Wine List Updates</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
 
-                <div class="modal-header">
-                    <h5 class="modal-title">Strawberry Festival</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <div class="modal-body text-center">
+                        <img src="image/wine_list.jpeg" class="img-fluid rounded">
+                    </div>
+
                 </div>
-
-                <div class="modal-body text-center">
-                    <img src="image/stawberry_image.JPG" class="img-fluid rounded">
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <!-- Dnata_pillow_cover -->
-    <div class="modal fade" id="pillow_cover" tabindex="-1">
+
+
+        <!-- Strawberry Modal -->
+        <div class="modal fade" id="s_img" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Strawberry Festival</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <img src="image/stawberry_image.JPG" class="img-fluid rounded">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Dnata_pillow_cover -->
+
+        <!-- <div class="modal fade" id="pillow_cover" tabindex="-1">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
 
@@ -412,47 +450,66 @@
                 </div>
 
                 <div class="modal-body text-center">
-                    <img src="image/green_bag_pillow_covers.png" class="img-fluid rounded">
+                    <img src="image/jc mattress.png" class="img-fluid rounded">
                 </div>
 
             </div>
         </div>
     </div>
+     -->
 
-    <!-- TL Update -->
-    <div class="modal fade" id="organic_milk_pack" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
+        <!-- jc mattress -->
+        <div class="modal fade" id="pillow_cover" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
 
-                <div class="modal-header">
-                    <h5 class="modal-title">Organic Milk Cartons</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <div class="modal-header">
+                        <h5 class="modal-title">JC Mattress</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <img src="image/jc mattress.png" class="img-fluid rounded" style="width: 300px;">
+                    </div>
+
                 </div>
-
-                <div class="modal-body text-center">
-                    <img src="image/organic_milk.jpeg" class="img-fluid rounded">
-                </div>
-
             </div>
         </div>
-    </div>
 
-    <div class="modal fade" id="s_img" tabindex="-1">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
+        <!-- TL Update -->
+        <div class="modal fade" id="organic_milk_pack" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
 
-                <div class="modal-header">
-                    <h5 class="modal-title">Strawberry Festival</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <div class="modal-header">
+                        <h5 class="modal-title">Organic Milk Cartons</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <img src="image/organic_milk.jpeg" class="img-fluid rounded">
+                    </div>
+
                 </div>
-
-                <div class="modal-body text-center">
-                    <img src="image/straberry.jpg" class="img-fluid rounded">
-                </div>
-
             </div>
         </div>
-    </div>
+
+        <div class="modal fade" id="s_img" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Strawberry Festival</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <img src="image/straberry.jpg" class="img-fluid rounded">
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </div>
     </div>
@@ -788,7 +845,7 @@
                                 </li>
                                 <pre></pre>
                                 <li>
-                                    <h6>Not loaded Tumbler Cups </h6>
+                                    <h6>Damages of Oval Bread Basket </h6>
                                 </li>
                                 <pre></pre>
 
@@ -979,7 +1036,7 @@
                 <div class="container my-5">
 
                     <h4 class="section-title mb-4">
-                        TEAM LEADER Error
+                        TEAM LEADER ERROR
                     </h4>
 
                     <div class="row g-4">
@@ -1005,11 +1062,12 @@
                             <div class="tl-card h-100">
                                 <div class="tl-header">
                                     <span class="tl-badge">TL2</span>
-                                    <h5>EK801</h5>
+                                    <h5>A380 HL</h5>
                                 </div>
 
                                 <ul class="tl-list">
-                                    <li>Lounge cart remained in High Loader lift after loading.</li>
+                                    <li>TLs are pausing operations because staff are not trained. A pause is not
+                                        required, as all staff have already been trained for A380 marshalling.</li>
                                 </ul>
                             </div>
                         </div>
@@ -1033,11 +1091,12 @@
                             <div class="tl-card h-100">
                                 <div class="tl-header">
                                     <span class="tl-badge">TL4</span>
-                                    <h5>Cross Verification</h5>
+                                    <h5>Load/Offload Delay</h5>
                                 </div>
 
                                 <ul class="tl-list">
-                                    <li>Galley and High Loader verification not completed.</li>
+                                    <li>TL must Brief the CRC flight to staff before loading starts.</strong>
+                                        RTB staff must check and report the cleaning/completion status TL.</li>
                                 </ul>
                             </div>
                         </div>
@@ -1116,7 +1175,7 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="kpi-card">
                                     <div class="label-title">
-                                        <h3>Staff and TL Mistake</h3>
+                                        <h3>Staff and TL Error</h3>
                                     </div>
                                     <div class="d-flex align-items-center gap-2">
                                         <span class="metric-badge badge-green metric-value-lg">10</span>

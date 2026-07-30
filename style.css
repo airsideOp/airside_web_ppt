@@ -238,7 +238,7 @@ body {
 
 /* aleart animation */
 .update-icon{
-    animation: iconBlink 0.5s ease-in-out 3;
+    animation: iconBlink 0.5s ease-in-out infinite;
 }
 
 @keyframes iconBlink{

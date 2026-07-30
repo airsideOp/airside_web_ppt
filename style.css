@@ -755,12 +755,11 @@ p{
     border-radius: 10px;
 }
 .jc_mattress_img img{
-    
-        width: 120px;
-        height: 170px;
-        object-fit: cover;
-        border-radius: 10px;
-    
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
 }
 .img_mlik_pack img {
     width: 120px;

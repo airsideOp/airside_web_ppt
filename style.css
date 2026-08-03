@@ -1390,3 +1390,130 @@ p{
     }
 
 }
+
+
+
+
+/* dry ice image size code */
+/* Mobile size adjustment  */
+
+.main_header {
+    font-size: 32px;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+.card-title{
+    color: #ff6200 ;
+    font-weight: bolder;
+
+}
+
+.main_header::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    bottom: -8px;
+    left: 0;
+    border-radius: 10px;
+}
+
+
+/* Reminder Cards */
+.card {
+    border-radius: 18px !important;
+    overflow: hidden;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255,255,255,0.5);
+}
+
+.reminder-list li{
+    list-style: none;
+    background:#f8f9fa;
+    border-left:4px solid #ff5722;
+    margin-bottom:10px;
+    padding:10px 15px;
+    border-radius:10px;
+    font-size:15px;
+    position:relative;
+    padding-left:45px;
+}
+
+.reminder-list li::before{
+    content:"✓";
+    position:absolute;
+    left:15px;
+    top:50%;
+    transform:translateY(-50%);
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:#22ff7a;
+    color:#fff;
+    text-align:center;
+    line-height:22px;
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+/* Content Area */
+.card-body {
+    padding: 25px;
+}
+
+
+
+/* Paragraph Content */
+.card-text {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+
+/* Notice Badge */
+.text-muted,
+.text-body-secondary {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 15px;
+    background: #fff3cd;
+    color: #f58220 !important;
+    font-weight: 700;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+/* Image Rounded Style */
+.col-md-4 img {
+    border-radius: 18px 0 0 18px;
+}
+
+.card img{
+    max-height: 500px;
+
+}
+
+@media (max-width: 768px){
+
+
+    .card-body{
+        padding:1rem;
+    }
+
+    .card-title{
+        font-size:1.6rem;
+    }
+}
+
+
+/* end here */
+

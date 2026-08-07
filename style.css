@@ -231,6 +231,61 @@ body {
 /* banner style end */
 
 
+/* live alert */
+
+.live-alert {
+    width: 100%;
+    background: #f58220;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px 0;
+}
+
+
+.alert-track {
+    display: flex;
+    width: max-content;
+    animation: scrollLeft 40s linear infinite;
+}
+
+
+.alert-track span {
+    display: inline-block;
+    margin-right: 80px;
+    font-size: 18px;
+    font-weight: 200;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Continuous Loop */
+@keyframes scrollLeft {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+
+/* Mobile */
+@media (max-width:768px){
+
+    .alert-track span{
+        font-size:13px;
+        margin-right:50px;
+    }
+
+}
+/* end of live alert */
+
+
+
 /* update card */
 .main_update {
     margin: 40px 0;
@@ -909,6 +964,16 @@ p{
 
 }
 
+
+.jc_slipper_img img {
+    width: 100%;
+    max-width: 120px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+
 /* end of rtb card con */
 
 .mark {
@@ -1516,4 +1581,3 @@ p{
 
 
 /* end here */
-

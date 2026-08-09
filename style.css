@@ -1,1795 +1,1620 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Air Side Operation</title>
+    <link rel="icon" href="image/EKFC_LOGO (2).png">
+    <script src="script.js"></script>
+    <link rel="ja" href="calendar.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="page_load" style="
+    background-image: url('image/bg_img.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+">
+    <section class="hero">
+        <!-- Dark Overlay -->
+        <div class="overlay"></div>
+        <div class="container position-relative">
+            <!-- Top Row -->
+            <div class="row pt-4">
+                <div class="col-md-6 col-6">
+                    <img src="image/EKFC_LOGO (2).png" class="logo">
+                </div>
+                <div class="col-md-6 col-6 text-end text-white">
+                    <div class="top-info">
+                        <strong class="p_text" id="text" style="font-size:larger;" >Prepared By AOM</strong>
+                        <br>
+                        <pre></pre>
+                        <i class="fa-regular fa-calendar"></i>
+                        <span id="cal_date"></span>
+
+                        <!-- java script code for date -->
+                        <script>
+
+                            function updateDate() {
+                                const today = new Date();
+
+                                const options = {
+                                    day: "numeric",
+                                    month: "long"
+                                };
+
+                                document.getElementById("cal_date").textContent =
+                                    today.toLocaleDateString("en-GB", options);
+                            }
+
+                            updateDate();
+                        </script>
+                        <!-- end of code date -->
+
+                        &nbsp;&nbsp;
+                                                  
+
+                        <strong class="Shift" id="shiftText">Shift B</strong>
+                        <pre></pre>
+                    </div>
+                    <!-- <strong class="Shift">Prepared BY AOM</strong> -->
+
+
+                </div>
+
+            </div>
+            <!-- SHIFT CODE START -->
+            <script>
+                function updateShift() {
+                    const now = new Date();
+                    const hour = now.getHours(); // 0-23
+
+                    let shift = "";
+
+                    if (hour >= 0 && hour < 12) {
+                        shift = "Shift A";
+                    } else if (hour >= 12 && hour < 18) {
+                        shift = "Shift B";
+                    } else {
+                        shift = "Shift C";
+                    }
+
+                    document.getElementById("shiftText").textContent = shift;
+                }
+
+                updateShift();
+            </script>
+            <!-- END OF SHIFT CODE -->
+
+
+            <!-- Main Content -->
+            <div class="row align-items-center banner-content">
+                <!-- Left -->
+                <div class="col-lg-7">
+                    <h1>
+                        <span style="font-size: 30px;">WELCOME TO</span> <br>
+                        <span style="font-weight: bold;">AIR SIDE OPERATION </span>
+                    </h1>
+                    <p>
+                        Together we keep operation safe,
+                        on time and every flight moving.
+
+                    </p>
+
+                </div>
+                <!-- Right -->
+
+                <div class="col-lg-5">
+                    <div class="contact-card">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h5 class="m-0">Emergency Contact Details</h5>
+                            <div class="phone">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <span>Ramp CO</span>
+                            <span class="contact_number">000 000 000</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>AOM</span>
+                            <span class="contact_number">000 000 000</span>
+                        </div>
+                        <div class="contact-item">
+                            <span>OM</span>
+                            <span class="contact_number">000 000 000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><div class="live-alert">
+    <div class="alert-track">
+
+        <span>🚨 Cart Missing - EK321 - TSU was not loaded & Staff failed to offload the arrival cart</span>
+        <span>🚨 Cart Missing - EK321 - TSU was not loaded & Staff failed to offload the arrival cart</span>
+        <span>🚨 Cart Missing - EK321 - TSU was not loaded & Staff failed to offload the arrival cart</span>
+
+        <!-- Duplicate again for seamless loop -->
+
+        <span>🚨 Cart Missing - EK321 - TSU was not loaded & Staff failed to offload the arrival cart</span>
+        <span>🚨 Cart Missing - EK321 - TSU was not loaded & Staff failed to offload the arrival cart</span>
+        <span>🚨 Cart Missing - EK321 - TSU was not loaded & Staff failed to offload the arrival cart</span>
+
+    </div>
+</div>
+
+    <div class="main_update">
+    <div class="update-card">
+
+        <!-- Left Icon -->
+        <div class="update-icon">
+            📢
+        </div>
+
+        <!-- Right Content -->
+        <div class="update-content">
+
+            <span class="badge-update">OPERATIONAL UPDATES</span>
+            <h4>ON GOING UPDATE</h4>
+
+            <!-- Update 1 -->
+            <!-- <div class="update-item danger">
+                <div class="update-number">1</div>
+
+                <div class="update-details">
+                    <div class="update-title">
+                        Team Leader took an extra 6 minutes to complete aircraft
+                    </div>
+
+                    <div class="update-text">
+                        The reason was <strong>not informed</strong> or mentioned in the operational comments.
+                    </div>
+                </div>
+            </div> -->
+
+            <!-- Update 2 -->
+            <div class="update-item info">
+                <div class="update-number">2</div>
+
+                <div class="update-details">
+                    <div class="update-title">
+                        Effective from <span class="date-tag" style="font-size: large;">01 August</span>
+                    </div>
 
-body {
+                    <div class="update-text">
+                        Business Class blankets will be replaced by
+                        <mark>Duvets</mark> on all
+                        <strong>CAT 3</strong> flights across all aircraft types.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Update 3 -->
+            <div class="update-item info">
+                <div class="update-number">3</div>
+
+                <div class="update-details">
+                    <div class="update-title">
+                        Effective from <span class="date-tag" style="font-size: large;">04 August</span>
+                    </div>
+
+                    <div class="update-text">
+                       Double uplift FC Amenities Bag (Grey) for return sector use on all 
+                        <strong>BCN:  EK185 & EK187</strong> flights across all aircraft types.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- END OF UPDATE  -->
+    
+
+<!-- Flight Delay Card -->
+  <h2 class="main_header" style="margin-left: 20px;">Flight Delay</h2>
+    <div class="card flight-delay-card h-100" style="margin-left: 20px; margin-right: 20px;">
+
+    <div class="row g-0 h-100">
+
+        <!-- Flight Delay Visual -->
+        <div class="col-12 col-md-4 delay-visual">
+
+            <div class="delay-visual-content">
+
+                <div class="delay-icon">
+                    ✈
+                </div>
+
+                <span class="delay-label">
+                    FLIGHT DELAY
+                </span>
+
+                <h2>EK 440</h2>
+
+                <span class="delay-badge">
+                    D-8
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Content -->
+        <div class="col-12 col-md-8">
+
+            <div class="card-body">
+
+                <span class="info-label">
+                    REASON FOR DELAY
+                </span>
+
+                <h3 class="card-title">
+                    Evian Water Not Loaded
+                </h3>
+                <hr>
+                <p class="delay-description">
+                    Flight EK 440 was delayed due to Evian water
+                    not being loaded.
+                </p>
+               
+                <small class="text-muted">
+                    Operational Update
+                </small>
+                
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+ <!-- delay of flight card end -->
+
+
+
+
+
+
+<!-- Reminder card lg-6  -->
+ <div class="container my-5">
+    <div class="row g-4">
+        <h2 class=" main_header">Reminder</h2>
+        <!-- Dry Ice Reminder -->
+        <div class="col-12 col-lg-12">
+            <div class="card h-100">
+                
+                <div class="row g-0">
+                    
+
+                    <!-- Image -->
+                    <div class="col-12 col-md-4">
+                        <img src="image/dry_ice.jpeg"
+                             class="img-fluid w-100 h-100 object-fit-cover"
+                             alt="Dry Ice">
+                    </div>
+
+                    <!-- Content -->
+                    <div class="col-12 col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">Dry Ice Loading Procedure</h3>
+
+                            <ul class="reminder-list">
+                                <li>Ensure dry ice is in good condition before loading.</li>
+                                <li>Place dry ice on top of the meal oven.</li>
+                                <li>Do not use melted, damaged, or evaporated dry ice.</li>
+                                <li>Report immediately to the Team Leader.</li>
+                                <li>Team Leaders must monitor early loading flights.</li>
+                            </ul>
+
+                            <small class="text-muted">Until Further Notice</small>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+ <!-- end of it  -->
+
+
+        <!-- ALT update  -->
+        <!-- dry ice reminder div start -->
+
+
+        <!-- tTWO CARDS IN ONE ROW FOR REMINDER -->
+        <!-- <div class="container my-5">
+            <div class="row g-4">
+                <h2 class=" main_header">Reminder</h2>
+                <div class="col-12 col-lg-6">
+                    <div class="card h-100 border-0">
+                        <div class="row g-0">
+                
+                            <div class="col-12 col-md-4">
+                                <img src="image/dry_ice.jpeg"
+                                    class="img-fluid w-100 h-100 object-fit-cover"
+                                    alt="Dry Ice">
+                            </div>
+                
+                            <div class="col-12 col-md-8">
+                                <div class="card-body ">
+                                    <h3 class="card-title">Dry Ice Loading Procedure</h3>
+                                    
+                                    <ul class="reminder-list">
+                                        <li>Ensure dry ice is in good condition before loading.</li>
+                                        <li>Place dry ice on top of the meal oven.</li>
+                                        <li>Do not use melted, damaged, or evaporated dry ice.</li>
+                                        <li>Report immediately to the Team Leader.</li>
+                                        <li>Team Leaders must monitor early loading flights.</li>
+                                    </ul>
+                                   
+                                    <small class="text-muted">Until Further Notice</small>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                </div> -->
+        
+                <!-- Card 2 -->
+                <!-- <div class="col-12 col-lg-6">
+                    <div class="card h-100">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="image/Ek_extra_dry_ice.png" class="img-fluid rounded-start h-100" alt="Image" style="margin-top: 50px;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Thermocol Box (Extra Dry Ice)</h5>
+                                    <p class="p-note">
+                                       Extra Dry Ice Will loaded in Galley top for Crew & Flight Handler to be used later 
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-body-secondary">Effective :-  Futher Notice</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div> -->
+
+         <!-- end of dry ice reminder code  -->
+
+
+
+
+
+        <!-- scond alert  -->
+         <!-- big alert auditing -->
+       <!-- <div class="container my-5"> 
+
+            <div class="card shadow rounded-3">
+
+              
+                <img src="image/security_banner_img.jpg" class="card-img-top" style="height:450px; object-fit:cover;"
+                    alt="Security Alert">
+
+                <div class="card-body">
+
+                    <h2 class="text-danger fw-bold text-center">
+                        BIG SECURITY ALERT
+                    </h2>
+
+                    <p class="text-center fw-bold">
+                        Security Audit – Effective Until <span class="text-danger">31 July 2026</span>
+                    </p>
+
+                    <hr>
+
+                    <h5>Security Audit</h5>
+                    <ul>
+                        <li>Airport Pass and Company ID must be visible at all times.</li>
+                        <li>Cooperate with all security inspections and audits.</li>
+                        <li>Report any suspicious person or unattended baggage immediately.</li>
+                    </ul>
+
+                    <h5 class="mt-4">Important Reminders</h5>
+                    <ul>
+                        <li>Do not eat or drink inside the aircraft or HLS.</li>
+                        <li>Do not carry prohibited items such as nail cutters, knives, or weapons.</li>
+                        <li>Do not leave personal belongings or equipment unattended.</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>  -->
+
+        <!-- end of it -->
+
+        <!--  -->
+        <div class="container my-5">
+            <div class="rtb-wrapper">
+
+                <!-- Header Section -->
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <div>
+                        <span class="rtb-header-title"> TL | ALT | RTB Point</span>
+                    </div>
+                    <!-- <a href="#" class="view-all-link">View All RTB Documents</a> -->
+                </div>
+
+                <!-- Carousel -->
+                <div id="rtbCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-inner">
+
+                        <!-- SLIDE 1 (Displays Cards 1 & 2) -->
+                        <div class="carousel-item active">
+                            <div class="row g-3">
+
+                                <!-- Card 1 -->
+                                <div class="col-md-6">
+                                    <div class="rtb-card">
+                                        <div class="row g-2 align-items-center w-100">
+                                            <div class="col-7">
+                                                <h4 class="rtb-card-title">Wine List Update</h4>
+                                                <div class="rtb-info">
+                                                    <p><strong>Effective:- </strong> 16 July 2026</p>
+                                                    <p><strong>Aircraft:- </strong> A380 / B777 only CAT 1 -3</p>
+                                                    <p><strong>Details:- </strong> Updated Wine Lists in the Business
+                                                        Class
+                                                        seat/console.</p>
+                                                </div>
+                                                <button class="btn-view-img" data-bs-toggle="modal"
+                                                    data-bs-target="#wine_img" data-image="image/wine_list">
+                                                    <i class="fa-regular fa-image"></i>
+                                                    View Image
+                                                </button>
+                                            </div>
+                                            <!-- img  -->
+                                            <div class="col-5">
+                                                <div class="rtb-img-container">
+                                                    <img src="image/wine_list.jpeg" alt="Wine List">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- Card 2 -->
+
+                                <div class="col-md-6">
+                                    <div class="rtb-card">
+                                        <div class="row g-2 align-items-center w-100">
+                                            <div class="col-7">
+                                                <h4 class="rtb-card-title">Organic Milk Pack </h4>
+                                                <div class="rtb-info">
+                                                    <p><strong>Effective:</strong>July 25th 2026</p>
+                                                    <p><strong>Aircraft:</strong> A6E-PA</p>
+                                                    <p><strong>Details:</strong> 04 Organic Milk Cartons in Business
+                                                        Class
+                                                        Galley Top. until further Notice</p>
+                                                </div>
+                                                <button class="btn-view-img" data-bs-toggle="modal"
+                                                    data-bs-target="#organic_milk_pack">
+                                                    <i class="fa-regular fa-image"></i> View Image
+                                                </button>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="img_mlik_pack">
+                                                    <img src="image/organic_milk.jpeg" alt="Udpate ERP">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+
+                        <!-- SLIDE 2 (Displays Cards 3 & 4) -->
+                        <div class="carousel-item">
+                            <div class="row g-3">
+                                <!-- Card 3 -->
+                                <!-- <div class="col-md-6">
+                                <div class="rtb-card">
+                                    <div class="row g-2 align-items-center w-100">
+                                        <div class="col-7">
+                                            <h4 class="rtb-card-title">Offload Pillow Cover</h4>
+                                            <div class="rtb-info">
+                                                <p><strong>Effective:- </strong> 08th of June</p>
+                                                <p><strong>Aircraft:- </strong> B777 |A380</p>
+                                                <p><strong>Details:- </strong> DNATA will collect all the pillow Cover
+                                                    and kept in Green bag</p>
+                                            </div>
+                                            <button class="btn-view-img" data-bs-toggle="modal"
+                                                data-bs-target="#pillow_cover">
+                                                <i class="fa-regular fa-image"></i> View Image
+                                            </button>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="rtb-img-container">
+                                                <img src="image/green_bag_pillow_covers.png" alt="Menu Update">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> -->
+
+                                <div class="col-md-6">
+                                    <div class="rtb-card">
+                                        <div class="row g-2 align-items-center w-100">
+                                            <div class="col-7">
+                                                <h4 class="rtb-card-title">Additional 6pc of JC Mattress in Hattrack
+                                                </h4>
+                                                <div class="rtb-info">
+                                                    <p><strong>Effective:- </strong> 29th of July</p>
+                                                    <p><strong>Aircraft:- </strong> All in <mark style="background-color: rgb(255, 249, 184); color: black;">UK</mark> &
+                                                        <mark style="background-color: rgb(255, 249, 184); color: black;">BKK</mark> Sector flight
+                                                    </p>
+                                                    <p><strong>Details:- </strong> In all the UK Sector Flight there
+                                                        will be a 6pc of JC Mattres sLoaded until further Notice</p>
+                                                </div>
+                                                <button class="btn-view-img" data-bs-toggle="modal"
+                                                    data-bs-target="#pillow_cover">
+                                                    <i class="fa-regular fa-image"></i> View Image
+                                                </button>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="jc_mattress_img">
+                                                    <img src="image/jc mattress.png" alt="Menu Update">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Card 4 -->
+
+                                <!-- new -->
+                                <div class="col-md-6">
+                                    <div class="rtb-card">
+                                        <div class="row g-2 align-items-center w-100">
+                                            <div class="col-7">
+                                                <h4 class="rtb-card-title">Return Use Slipper & Shades
+                                                </h4>
+                                                <div class="rtb-info">
+                                                    <p><strong>Effective:- </strong> 01 August</p>
+                                                    <p><strong>Aircraft:- </strong> All in
+                                                        <mark style="background-color: rgb(255, 249, 184); color: black;">GIG</mark> Sector flights
+                                                    </p>
+                                                    <p><strong>Details:- </strong> Double suplift JC Slippers & Eyeshades. Will be marked as Return Use Only</p>
+                                                </div>
+                                                <button class="btn-view-img" data-bs-toggle="modal"
+                                                    data-bs-target="#pillow_cover">
+                                                    <i class="fa-regular fa-image"></i> View Image
+                                                </button>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="jc_slipper_img">
+                                                    <img src="image/slippers_eyeshades.png" alt="Menu Update">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls (Arrows) -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#rtbCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#rtbCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </button>
+
+                    <!-- Indicators (Dots) -->
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- alt image model start  -->
+
+        <!-- Wine Modal -->
+        <div class="modal fade" id="wine_img" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Wine List Updates</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <img src="image/wine_list.jpeg" class="img-fluid rounded">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Strawberry Modal -->
+        <!-- <div class="modal fade" id="s_img" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Strawberry Festival</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <img src="image/stawberry_image.JPG" class="img-fluid rounded">
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+
+        <!-- MODEL OF SLIPPER AND SHADES -->
+        <div class="modal fade" id="pillow_cover" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">slippers_eyeshades</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <img src="image/slippers_eyeshades.png" class="img-fluid rounded" style="width: 300px;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Dnata_pillow_cover -->
+
+        <!-- <div class="modal fade" id="pillow_cover" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Green Bag Pillow Cover Offload</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body text-center">
+                    <img src="image/jc mattress.png" class="img-fluid rounded">
+                </div>
+
+            </div>
+        </div>
+    </div>
+     -->
+
+        <!-- jc mattress -->
+        <div class="modal fade" id="pillow_cover" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">JC Mattress</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <img src="image/jc mattress.png" class="img-fluid rounded" style="width: 300px;">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- TL Update -->
+        <div class="modal fade" id="organic_milk_pack" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Organic Milk Cartons</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <img src="image/organic_milk.jpeg" class="img-fluid rounded">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="s_img" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title">Strawberry Festival</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body text-center">
+                        <img src="image/straberry.jpg" class="img-fluid rounded">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- alt model img end  -->
+
+
+    <!-- end of alt update -->
+
+    <section class="py-5">
+        <div class="container">
+
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="hot-card">
+
+                        <div class="hot-header">
+                            <i class="fa-solid fa-fire"></i>
+                            HOT TOPIC
+                        </div>
+
+                        <div class="hot-image">
+
+                            <img src="image/cart_falling.png" alt="Cart Falling">
+
+                            <div class="hot-overlay">
+
+                                <h2>Cart Falling Down</h2>
+
+                                <p>
+                                    During the departure of EK123 on 17 May, a bar cart fell
+                                    inside the high loader while a staff member was
+                                    pushing two half carts together instead of moving them one at a time.
+                                </p>
+
+
+
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="hot-buttons">
+
+                            <a href="#" class="btn btn-dark">
+                                CCTV FOOTAGE
+                            </a>
+
+                            <a href="#" class="btn btn-secondary">
+                                View More Topic
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+
+                        <div class="card-header">
+                            SAFETY BRIEFING
+                        </div>
+
+                        <div class="card-body">
+
+                            <ul class="topic-list">
+                                <li>
+                                    <h5>Cart Falling Prevention</h5>
+                                    <h6 class="sub_headings">Be aware of surrounding </h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h5>Use Equipment Safely </h5>
+                                    <h6 class="sub_headings">Always Check before use.</h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h5>Secure all the Carts and Container </h5>
+                                    <h6 class="sub_headings">Double Check Latches and Locks .</h6>
+                                </li>
+
+                                <pre></pre>
+                                <li>
+                                    <h5> Near Miss</h5>
+                                    <h6 class="sub_headings">Maintain 10 cm Gap between HL & Platform</h6>
+                                </li>
+
+                                <pre></pre>
+                                <li>
+                                    <h5>Use Three-Point Contact</h5>
+                                    <h6 class="sub_headings">Maintain three-point contact when climbing ladders or
+                                        accessing equipment.</h6>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+
+                    <div class="card">
+
+                        <div class="card-header">
+                            OPERATIONAL UPDATES
+
+                        </div>
+
+                        <div class="card-body">
+
+                            <ul class="topic-list">
+
+                                <!-- First Update -->
+                                <li>
+                                    <h5>London Sector - W-Towel in FC Galley
+
+
+
+                                    </h5>
+
+                                    <h6 class="sub_headings">
+                                        For the next 14 days, extra bundle towels will be loaded in the FC galley top
+                                        and EY hatrack.
+                                    </h6>
+
+                                    <p>B777 - 41DE &nbsp;&nbsp;|&nbsp;&nbsp; A380 - 57DE</p>
+                                    <button class="img_btn" data-bs-toggle="modal" data-bs-target="#towelModal">
+                                        Image
+                                    </button>
+
+                                </li>
+
+                                <hr>
+
+                                <!-- Second Update -->
+                                <li>
+                                    <h5>Additional Snacks Bags
+
+                                        <button class="img_btn_2" data-bs-toggle="modal" data-bs-target="#snacksModal">
+                                            Image
+                                        </button>
+
+                                    </h5>
+
+                                    <h6 class="sub_headings">
+                                        B777: 2 snacks bags &nbsp; | &nbsp;
+                                        A350: 2 snacks bags &nbsp; | &nbsp;
+                                        A380: 3 snacks bags
+                                    </h6>
+                                    <hr>
+
+                                    <pre>
+
+
+                    </pre>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="modal fade" id="towelModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">W-Towel Bundle</h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                </button>
+                            </div>
+
+                            <div class="modal-body text-center">
+                                <img src="image/W_towel.png" class="img-fluid" alt="W-Towel">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="snacksModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">Snacks Bag</h5>
+
+                                <button type="button" class="btn-close" data-bs-dismiss="modal">
+                                </button>
+                            </div>
+
+                            <div class="modal-body text-center">
+                                <img src="image/snacks.jpg" class="img-fluid" alt="Snacks Bag">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- end of card  -->
+
+
+    <!-- second row card start -->
+    <section class="py-7">
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- Card 2 -->
+
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+
+                        <div class="card-header_2">
+                            Load Equipment According to
+                            Checklist
+                        </div>
+                        <h5 class="para_1">Ensure all the carts containers and loose items are loaded as per provided
+                            checklist</h5>
+                        <div class="card-body">
+
+                            <ul class="topic-list">
+
+                                <li>
+                                    <h6>Take Pictures of all the loose items in Tab</h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>Verify the Quantity of loose items </h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>Load in correct location </h6>
+                                </li>
+
+                                <pre></pre>
+
+
+                                <li>
+                                    <h6>Mention Short Items in checklist</h6>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+
+                        <div class="card-header_3">
+                            Safe Marshaling
+                            <h6>Aircraft Marshalling Procedures</h6>
+                        </div>
+
+                        <div class="card-body">
+
+                            <ul class="topic-list">
+
+                                <li>
+                                    <h6>Maintain 10 cm gap between High Loader and
+                                        aircraft.</h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>10–15 cm gap between side guard rail and
+                                        aircraft door.</h6>
+
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>If marshalling is incorrect, re-Marshall before
+                                        docking..</h6>
+                                </li>
+                                <pre></pre>
+
+
+                                <li>
+                                    <h6>Report any damage immediately.</h6>
+                                </li>
 
-    font-family: 'Inter', sans-serif;
-    background-image: image(image);
 
-}
+                            </ul>
+                            <pre>
+            </pre>
+                        </div>
 
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
+                    </div>
+                </div>
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-/* banner style start  */
-/* <!-- banner image fit  --> */
-.container {
-    max-width: 1320px;
-    /* or 1280px */
-}
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
 
-.hero {
+                        <div class="card-header_4">
+                            NCR Internal & External
+                            <h6>Keep all the items in correct location without any mistakes </h6>
+                        </div>
 
-    position: relative;
+                        <div class="card-body">
 
-    min-height: 650px;
+                            <ul class="topic-list">
 
-    background: url("image/ekfc_banner_image.png") center center/cover no-repeat;
+                                <li>
+                                    <h6>Sliver Trays not loaded in correct location .</h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>Missing Oven Covers </h6>
 
-}
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>Damages of Oval Bread Basket </h6>
+                                </li>
+                                <pre></pre>
 
-/* <!-- banner darkness  --> */
 
-.overlay {
+                                <li>
+                                    <h6>RTB Matress Short</h6>
+                                </li>
+                                <pre></pre>
+                                <li>
+                                    <h6>Checklist are Empty</h6>
+                                </li>
+                            </ul>
+                            <pre>
+            </pre>
+                        </div>
 
-    position: absolute;
+                    </div>
+                </div>
 
-    inset: 0;
 
-    background: rgba(0, 0, 0, .48);
+            </div>
+        </div>
 
-}
 
-.logo {
-    width: 300px;
-    height: auto;
-}
 
-/* On mobile screens */
-@media (max-width: 768px) {
-    .logo {
-        width: 1000px;
-    }
-}
 
-.contact_number {
-    color: white;
-    text-decoration: none;
-}
 
-.top-info {
 
-    font-size: 15px;
-    font-weight: 200;
-}
 
-/* <!-- banner header gap  --> */
 
-.banner-content {
 
-    min-height: 200px;
 
-}
 
-.banner-content h1 {
 
-    color: #fff;
 
-    font-size: 50px;
 
-    font-weight: 500;
 
-    line-height: 1.25;
 
-}
+        <pre>
 
-/* <!-- para adjusts  --> */
 
-.banner-content p {
 
-    color: #eaeaea;
+</pre>
 
-    font-size: 28px;
 
-    margin-top: 25px;
 
-    max-width: 650px;
 
-}
+        <!-- start of hot topic of the week -->
+        <div class="container py-5">
 
-/* contact detail design */
-.contact-card {
+            <div class="text-center mb-4">
+                <h1 class="header_mistakes">
+                    <i class="fa-solid fa-triangle-exclamation text-danger"></i>
+                    SAFETY TOPIC OF THE WEEK
+                </h1>
 
-    background: rgba(255, 253, 253, 0.18);
+                <p class="para_2">
+                    Review of recent incidents to prevent recurrence and maintain operational safety.
+                </p>
+            </div>
 
-    backdrop-filter: blur(10px);
+            <div class="safety-card">
 
-    border-radius: 15px;
+                <div class="row g-0">
 
-    color: #fff;
+                    <!-- Image -->
+                    <div class="col-lg-4">
 
-    padding: 35px;
+                        <div class="image-box">
 
-}
+                            <img src="image/hls_s.jfif" alt="Safety Topic">
 
-.phone {
+                            <span class="status-badge">
+                                HIGH PRIORITY
+                            </span>
 
-    width: 45px;
+                        </div>
 
-    height: 45px;
+                    </div>
 
-    background: #e60000;
+                    <!-- Content -->
+                    <div class="col-lg-8">
 
-    display: flex;
+                        <div class="content-box">
 
-    justify-content: center;
+                            <h2 class="sub_header">
+                                High Loader Stabilizer Not Deployed
+                            </h2>
 
-    align-items: center;
+                            <div class="info-grid">
 
-    border-radius: 50%;
+                                <div class="info-item">
+                                    <span>Aircraft</span>
+                                    <strong>EK324</strong>
+                                </div>
 
-    font-size: 18px;
+                                <div class="info-item">
+                                    <span>Date</span>
+                                    <strong>14 July 2026</strong>
+                                </div>
 
-}
+                                <div class="info-item">
+                                    <span>Issue</span>
+                                    <strong>High Loader Stabilizer</strong>
+                                </div>
 
-.contact-item {
+                                <div class="info-item">
+                                    <span>Risk Level</span>
+                                    <strong class="text-danger">High</strong>
+                                </div>
 
-    display: flex;
+                            </div>
 
-    justify-content: space-between;
+                            <hr>
 
-    margin: 18px 0;
+                            <h5 class="text-success">
+                                <i class="fa-solid fa-circle-check"></i>
+                                Corrective Action
+                            </h5>
 
-    font-size: 20px;
+                            <p class="action-text">
 
+                                Never ignore the stabilizer warning buzzer or flashing warning light.
+                                Deploy the stabilizers completely and follow the
+                                <span class="sop-badge">SOP</span>
+                                before commencing any loading or unloading operation.
 
+                            </p>
 
-}
+                        </div>
 
-@media(max-width:991px) {
+                    </div>
 
-    .hero {
+                </div>
 
-        min-height: auto;
+            </div>
 
-        padding-bottom: 40px;
+        </div>
+        <!-- end of it  -->
 
-    }
+        <!-- staff details mistakes -->
+        <div class="container my-5">
 
-    .banner-content {
+            <h4 class="section-title-1 mb-4">
+                Staff Error
+            </h4>
 
-        padding-top: 40px;
+            <div class="row g-4">
 
-    }
+                <!-- Card 1 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="tl-card h-100">
+                        <div class="tl-header-1">
+                            <span class="tl-badge-1">S1</span>
+                            <h5>Secure Loading</h5>
+                        </div>
 
-    .banner-content h1 {
+                        <ul class="tl-list-1">
+                            <li>Cart Falling during load / Offload .</li>
+                            <li>Multiple incident of falling on aircraft wing an tarmac</li>
+                        </ul>
+                    </div>
+                </div>
 
-        font-size: 45px;
+                <!-- Card 1 -->
+                <div class="col-lg-6 col-md-6">
+                    <div class="tl-card h-100">
+                        <div class="tl-header-1">
+                            <span class="tl-badge-1">S1</span>
+                            <h5>Pesronal Injury</h5>
+                        </div>
 
-    }
+                        <ul class="tl-list-1">
+                            <li>Not wearing PPE (Safety Golves, Ear Plugs)</li>
+                            <li>Walking while Marshaling</li>
+                        </ul>
+                    </div>
+                </div>
 
-    .banner-content p {
 
-        font-size: 22px;
 
-    }
 
-    .contact-card {
 
-        margin-top: 35px;
 
-    }
 
-}
+                <!-- second row TL mis -->
 
-@media(max-width:576px) {
+                <div class="container my-5">
 
-    .logo {
+                    <h4 class="section-title mb-4">
+                        TEAM LEADER Error
+                    </h4>
 
-        width: 110px;
+                    <div class="row g-4">
 
-    }
+                        <!-- Card 1 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tl-card h-100">
+                                <div class="tl-header">
+                                    <span class="tl-badge">TL1</span>
+                                    <h5>EK703</h5>
+                                </div>
 
-    .top-info {
+                                <ul class="tl-list">
+                                    <li>The Team Leader did not order the cabin spray, but staff marked it on the
+                                        checklist.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
-        font-size: 14px;
+                        <!-- Card 2 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tl-card h-100">
+                                <div class="tl-header">
+                                    <span class="tl-badge">TL2</span>
+                                    <h5>A380 HL</h5>
+                                </div>
+
+                                <ul class="tl-list">
+                                    <li>TLs are pausing operations because staff are not trained. A pause is not
+                                        required, as all staff have already been trained for A380 marshalling.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tl-card h-100">
+                                <div class="tl-header">
+                                    <span class="tl-badge">TL3</span>
+                                    <h5>Offload Flights</h5>
+                                </div>
+
+                                <ul class="tl-list">
+                                    <li>Staff details were not updated in offload notes.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tl-card h-100">
+                                <div class="tl-header">
+                                    <span class="tl-badge">TL4</span>
+                                    <h5>Load/Offload Delay</h5>
+                                </div>
+
+                                <ul class="tl-list">
+                                    <li>TL must Brief the CRC flight to staff before loading starts.</strong>
+                                        RTB staff must check and report the cleaning/completion status TL.</li>
+                                </ul>
+                            </div>
+                        </div>
 
-    }
+                    </div>
 
-    .banner-content h1 {
+                </div>
 
-        font-size: 34px;
 
-    }
 
-    .banner-content p {
 
-        font-size: 18px;
+                <div class="container">
+                    <h1>Weekly Summary</h1>
 
-    }
+                    <h3>Operational Performance</h3>
+                    <div class="performance-container" style="color: black; font: 700;">
+                        <div class="row g-3">
 
-    .contact-item {
+                            <!-- Card 1: OTP Performance -->
+                            <div class="col-md-3 col-sm-6">
+                                <div class="kpi-card">
+                                    <div class="label-title">
+                                        <h3>OTP Performance</h3>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="metric-badge badge-green metric-value-lg">100%</span>
+                                        <div>
+                                            <div class="trend-text text-dark">
+                                                <p style="font-size: x-large;">POSITIVE</p>
+                                            </div>
+                                            <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-        font-size: 16px;
 
-    }
+                            <div class="col-md-3 col-sm-6">
+                                <div class="kpi-card">
+                                    <div class="label-title">
+                                        <h3>Personal Injury</h3>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="metric-badge badge-green metric-value-lg">3</span>
+                                        <div>
+                                            <div class="trend-text text-dark">
+                                                <p style="font-size: x-large;">POSITIVE</p>
+                                            </div>
+                                            <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
 
-}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-/* banner style end */
 
+                            <div class="col-md-3 col-sm-6">
+                                <div class="kpi-card">
+                                    <div class="label-title">
+                                        <h3>Near Miss</h3>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="metric-badge badge-green metric-value-lg">3</span>
+                                        <div>
+                                            <div class="trend-text text-dark">
+                                                <p style="font-size: x-large;">Negative</p>
+                                            </div>
+                                            <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
 
-/* live alert */
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-.live-alert {
-    width: 100%;
-    background: #f58220;
-    color: #fff;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 10px 0;
-}
 
+                            <div class="col-md-3 col-sm-6">
+                                <div class="kpi-card">
+                                    <div class="label-title">
+                                        <h3>Staff and TL Error</h3>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span class="metric-badge badge-green metric-value-lg">10</span>
+                                        <div>
+                                            <div class="trend-text text-dark">
+                                                <p style="font-size: x-large;">Negative</p>
+                                            </div>
+                                            <p style="color: rgb(0, 248, 0); font-size: larger    ;">Last Week</p>
 
-.alert-track {
-    display: flex;
-    width: max-content;
-    animation: scrollLeft 40s linear infinite;
-}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
+                        </div>
+                    </div>
 
-.alert-track span {
-    display: inline-block;
-    margin-right: 80px;
-    font-size: 18px;
-    font-weight: 200;
-    font-family: 'Inter', sans-serif;
-}
 
+                    <!--  -->
 
-/* Continuous Loop */
-@keyframes scrollLeft {
 
-    from {
-        transform: translateX(0);
-    }
 
-    to {
-        transform: translateX(-50%);
-    }
 
-}
 
 
-/* Mobile */
-@media (max-width:768px) {
+                    <pre>
+</pre>
 
-    .alert-track span {
-        font-size: 13px;
-        margin-right: 50px;
-    }
 
-}
 
-/* end of live alert */
 
 
+                    <hr>
+                    <h2 class="tl_header">Team Leader Update Sheet</h2>
 
-/* update card */
-.main_update {
-    margin: 40px 0;
-}
+                    <div class="container my-5">
+                        <div class="card shadow-lg border-0 rounded-4">
 
+                            <div class="form_card">
+                                <h3 class="mb-0">
+                                    <i class="fa-solid fa-users"></i>
+                                    Team Leader Briefing ERP Update Form
+                                </h3>
+                            </div>
 
-/* Card */
-.update-card {
-    display: flex;
-    align-items: flex-start;
-    gap: 25px;
-    background: #fff;
-    border-left: 8px solid #ff7b00;
-    border-radius: 18px;
-    padding: 25px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
-    transition: .3s;
-}
+                            <div class="card-body">
+                                <form id="myForm">
 
-.update-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 18px 40px rgba(255, 122, 0, .18);
-}
+                                    <div class="row g-3">
 
-/* Icon */
+                                        <div class="col-md-4">
+                                            <label class="form-label fw-bold">Date</label>
+                                            <input type="date" id="date" class="form-control" required>
+                                        </div>
 
-.update-icon {
-    width: 75px;
-    height: 75px;
-    background: linear-gradient(135deg, #ff9800, #ff6200);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 34px;
-    color: #fff;
-    flex-shrink: 0;
-    box-shadow: 0 8px 18px rgba(255, 122, 0, .35);
-    animation: iconBlink .3s infinite;
-}
+                                    </div>
 
-@keyframes iconBlink {
+                                    <hr class="my-4">
 
-    0%,
-    100% {
-        transform: scale(1);
-    }
+                                    <h5 class="mb-3">
+                                        <i class="fa-solid fa-id-badge"></i>
+                                        Team Leader Shift Briefing Update
+                                    </h5>
 
-    50% {
-        transform: scale(1.15);
-    }
+                                    <div class="row g-3">
 
-}
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl1"
+                                                placeholder="TL ERP. 1"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl2"
+                                                placeholder="TL ERP. 2"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl3"
+                                                placeholder="TL ERP. 3"></div>
 
-/* Badge */
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl4"
+                                                placeholder="TL ERP. 4"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl5"
+                                                placeholder="TL ERP. 5"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl6"
+                                                placeholder="TL ERP. 6"></div>
 
-.badge-update {
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl7"
+                                                placeholder="TL ERP. 7"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl8"
+                                                placeholder="TL ERP. 8"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl9"
+                                                placeholder="TL ERP. 9"></div>
 
-    display: inline-block;
-    background: #fff3e7;
-    color: #ff6200;
-    padding: 7px 16px;
-    border-radius: 30px;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl10"
+                                                placeholder="TL ERP. 10"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl11"
+                                                placeholder="TL ERP. 11"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl12"
+                                                placeholder="TL ERP. 12"></div>
 
-}
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl13"
+                                                placeholder="TL ERP. 13"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl14"
+                                                placeholder="TL ERP. 14"></div>
+                                        <div class="col-md-4"><input type="text" class="form-control" id="tl15"
+                                                placeholder="TL ERP. 15"></div>
 
-/* Heading */
+                                    </div>
 
-.update-content h4 {
+                                    <hr class="my-4">
 
-    margin: 0 0 20px;
-    font-size: 30px;
-    color: #ff6200;
-    font-weight: 700;
+                                    <div class="text-end">
 
-}
+                                        <button type="reset" class="btn btn-outline-secondary me-2">
+                                            <i class="fa-solid fa-rotate-left"></i>
+                                            Reset
+                                        </button>
 
-/* Individual Update */
+                                        <button type="submit" class="submit_btn">
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                            Submit
+                                        </button>
 
-.update-item {
+                                    </div>
 
-    display: flex;
-    align-items: flex-start;
-    gap: 18px;
-    padding: 18px;
-    border-radius: 15px;
-    margin-bottom: 18px;
-    transition: .3s;
+                                </form>
+                            </div>
 
-}
+                        </div>
+                    </div>
 
-.update-item:last-child {
-    margin-bottom: 0;
-}
+                    <script>
+                        const scriptURL = "https://script.google.com/macros/s/AKfycby-X2zX73KtNULj17alot91K6IqnWUUqncjBX0fIxXeTF1NcgvqFwuIxX-IfktFpWgHGw/exec";
 
-.update-item:hover {
-    transform: translateX(6px);
-}
+                        document.getElementById("myForm").addEventListener("submit", function (e) {
 
-/* Number */
+                            e.preventDefault();
 
-.update-number {
+                            const data = {
 
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 18px;
-    color: #fff;
-    flex-shrink: 0;
+                                date: document.getElementById("date").value,
 
-}
+                                tl1: document.getElementById("tl1").value,
+                                tl2: document.getElementById("tl2").value,
+                                tl3: document.getElementById("tl3").value,
+                                tl4: document.getElementById("tl4").value,
+                                tl5: document.getElementById("tl5").value,
+                                tl6: document.getElementById("tl6").value,
+                                tl7: document.getElementById("tl7").value,
+                                tl8: document.getElementById("tl8").value,
+                                tl9: document.getElementById("tl9").value,
+                                tl10: document.getElementById("tl10").value,
+                                tl11: document.getElementById("tl11").value,
+                                tl12: document.getElementById("tl12").value,
+                                tl13: document.getElementById("tl13").value,
+                                tl14: document.getElementById("tl14").value,
+                                tl15: document.getElementById("tl15").value
+                            };
 
-/* Different Colors */
+                            fetch(scriptURL, {
+                                method: "POST",
+                                body: JSON.stringify(data)
+                            })
+                                .then(response => response.json())
+                                .then(data => {
+                                    alert("Data Saved Successfully ✅");
+                                    document.getElementById("myForm").reset();
+                                })
+                                .catch(error => {
+                                    console.error(error);
+                                    alert("Error Saving Data ❌");
+                                });
 
-.update-item.danger {
+                        });
+                    </script>
 
-    background: #FFFDD0;
-    border-left: 5px solid #ff6200;
+                    <hr>
+                    <h3 style="text-align: center; font-size: x;">AIRSIDE OPERATION</h3>
+                    <!-- Bootstrap JS -->
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
-}
-
-.update-item.danger .update-number {
-
-    background: #ff6200;
-
-}
-
-/* second card  */
-.update-item.info {
-
-    background: #FFFDD0;
-    border-left: 5px solid #ff6200;
-
-}
-
-.update-item.info .update-number {
-
-    background: #ff6200;
-
-}
-
-/* end of second card */
-/* Text */
-
-.update-title {
-
-    font-size: 19px;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 6px;
-
-}
-
-.update-text {
-
-    font-size: 16px;
-    line-height: 1.8;
-    color: #555;
-
-}
-
-.update-text strong {
-
-    color: #ff6200;
-
-}
-
-.date-tag {
-
-    background: #ff6200;
-    color: #fff;
-    padding: 3px 10px;
-    border-radius: 20px;
-    font-size: 13px;
-
-}
-
-mark {
-
-    background: #ff6200;
-    color: white;
-    padding: 2px 8px;
-    border-radius: 5px;
-
-}
-
-/* Mobile */
-
-@media(max-width:768px) {
-
-    .update-card {
-
-        flex-direction: column;
-        text-align: left;
-
-    }
-
-    .update-icon {
-
-        margin: auto;
-
-    }
-
-    .update-content h4 {
-
-        text-align: left;
-
-    }
-
-}
-
-/* end of upodate card */
-
-
-
-.card-header {
-
-    font-size: 30px;
-    font-weight: 500;
-    background-color: #B88A5C;
-    color: white;
-}
-
-.sub_headings {
-    color: #8d8d8d;
-}
-
-
-.hot-card {
-    background: #ff0000;
-    border-radius: 20px;
-    padding: 15px;
-}
-
-.hot-header {
-    color: #fff;
-    font-size: 38px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.hot-header i {
-    font-size: 30px;
-}
-
-.hot-image {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-}
-
-/* cart img adjustment  */
-.hot-image img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    display: block;
-}
-
-.hot-image::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, .45);
-    z-index: 1;
-}
-
-.hot-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    color: #ffffff;
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.hot-overlay h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin-top: 10px;
-}
-
-.hot-overlay p {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.hot-buttons {
-    display: flex;
-    justify-content: space-between;
-    gap: 12px;
-}
-
-.hot-buttons .btn {
-    border-radius: 10px;
-    padding: 10px 18px;
-    font-size: 17px;
-    font-weight: 500;
-}
-
-.hot-buttons .btn-dark {
-    background: #5d5d5d;
-    border: none;
-}
-
-.hot-buttons .btn-secondary {
-    background: #808080;
-    border: none;
-}
-
-.hot-buttons .btn:hover {
-    opacity: .9;
-}
-
-/* Responsive */
-
-@media(max-width:991px) {
-
-    .hot-image img {
-        height: 420px;
-    }
-
-    .hot-overlay h2 {
-        font-size: 32px;
-    }
-
-    .hot-overlay p {
-        font-size: 18px;
-    }
-
-}
-
-@media(max-width:576px) {
-
-    .hot-header {
-        font-size: 28px;
-    }
-
-    .hot-header i {
-        font-size: 28px;
-    }
-
-    .hot-image img {
-        height: 350px;
-    }
-
-    .hot-overlay {
-        padding: 18px;
-    }
-
-    .hot-overlay h2 {
-        font-size: 24px;
-    }
-
-    .hot-overlay p {
-        font-size: 15px;
-        line-height: 1.5;
-    }
-
-    .hot-buttons {
-        flex-direction: column;
-    }
-
-    .hot-buttons .btn {
-        width: 100%;
-    }
-
-}
-
-
-
-/*  card popup image */
-.img_btn {
-    background-color: red;
-    color: white;
-    border-radius: 5;
-    font-size: 17px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 8px;
-    border-color: red;
-
-}
-
-.img_btn_2 {
-    background-color: red;
-    color: white;
-    margin-left: 10px;
-    border-radius: 5;
-    font-size: 17px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-radius: 8px;
-    border-color: red;
-
-}
-
-.card-header_2 {
-    font-size: 30px;
-    font-weight: 500;
-    background-color: #7E28B7;
-    color: white;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    border-radius: 5px;
-
-}
-
-.card-header_3 {
-    font-size: 30px;
-    font-weight: 500;
-    background-color: #219693;
-    color: white;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    border-radius: 5px;
-
-}
-
-.card-header_4 {
-    font-size: 30px;
-    font-weight: 500;
-    background-color: #FEF5E0;
-    color: #5F1C00;
-    padding-left: 20px;
-    padding-bottom: 10px;
-    padding-top: 5px;
-    border-radius: 5px;
-
-}
-
-.para_1 {
-    padding-left: 10px;
-    padding-right: 5px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-/*  */
-
-.card {
-    border-radius: 20px;
-}
-
-.card img {
-    border-radius: 18px;
-    height: 50px;
-}
-
-/* 
-
-.btn_rtb{
-    border-radius:10px;
-    padding:10px 25px;
-    font-weight:600;
-    background-color: #e60000;
-    color: white;
-    border-color: #e60000;
-}
-
-h3{
-    font-weight:700;
-}
-
-p{
-    font-size:17px;
-}
-
-.main_header{
-    text-align: center;
-
-} */
-
-/* rtb card css code start  */
-
-.rtb-wrapper {
-    background: #ffffff;
-    border-left: 8px solid #ff7a00;
-    border-radius: 16px;
-    padding: 24px 32px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    position: relative;
-}
-
-/* Top Header Area */
-.rtb-header-title {
-    font-weight: 500;
-    color: #1f2937;
-    font-size: 1.25rem;
-    letter-spacing: 0.5px;
-}
-
-.badge-new {
-    background-color: #dc3545;
-    color: #fff;
-    font-size: 0.75rem;
-    padding: 2px 8px;
-    border-radius: 6px;
-    margin-left: 8px;
-    font-weight: 600;
-    vertical-align: middle;
-}
-
-.view-all-link {
-    color: #000000;
-    font-weight: 600;
-    font-size: 0.875rem;
-    text-decoration: none;
-}
-
-.view-all-link:hover {
-    text-decoration: underline;
-}
-
-/* RTB Item Card */
-.rtb-card {
-    background: #fafafa;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 16px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.rtb-badge {
-    background-color: #22c55e;
-    color: white;
-    font-weight: 700;
-    font-size: 0.75rem;
-    padding: 4px 8px;
-    border-radius: 6px;
-    display: inline-block;
-    margin-bottom: 8px;
-}
-
-.rtb-card-title {
-    font-weight: 700;
-    font-size: 1.1rem;
-    color: #111827;
-    margin-bottom: 12px;
-}
-
-.rtb-info p {
-    margin-bottom: 4px;
-    font-size: 0.85rem;
-    color: #4b5563;
-}
-
-.rtb-info strong {
-    color: #1f2937;
-}
-
-.btn-view-img {
-    background-color: #fef2f2;
-    color: #dc3545;
-    border: none;
-    border-radius: 8px;
-    padding: 6px 14px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin-top: 12px;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    transition: background-color 0.2s ease;
-}
-
-.btn-view-img:hover {
-    background-color: #fee2e2;
-    color: #b91c1c;
-}
-
-.rtb-img-container {
-    width: 100%;
-    height: 100%;
-    min-height: 180px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.rtb-img-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Custom Carousel Arrows */
-.carousel-control-prev,
-.carousel-control-next {
-    width: 36px;
-    height: 36px;
-    background-color: #ffffff;
-    border: 1px solid #e5e7eb;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 1;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-control-prev {
-    left: -18px;
-}
-
-.carousel-control-next {
-    right: -18px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    filter: invert(1) grayscale(100%);
-    width: 16px;
-    height: 16px;
-}
-
-/* Custom Carousel Dots (Indicators) */
-.carousel-indicators {
-    bottom: -28px;
-    margin-bottom: 0;
-}
-
-.carousel-indicators [data-bs-target] {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #d1d5db;
-    border: none;
-    margin: 0 4px;
-    opacity: 1;
-}
-
-.carousel-indicators .active {
-    background-color: #dc3545;
-}
-
-/* s_berry  adjustment */
-.s_drink img {
-    width: 120px;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.jc_mattress_img img {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-}
-
-.img_mlik_pack img {
-    width: 120px;
-    height: 170px;
-    object-fit: cover;
-
-}
-
-
-.jc_slipper_img img {
-    width: 100%;
-    max-width: 120px;
-    height: auto;
-    border-radius: 10px;
-    display: block;
-}
-
-
-/* end of rtb card con */
-
-.mark {
-    background-color: yellow;
-}
-
-.tl_header {
-    text-align: center;
-}
-
-
-/*  end of update con */
-
-
-.rtb-header-title {
-    font-size: xx-large;
-}
-
-.form_card {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    background-color: #B88A5C;
-    color: white;
-}
-
-.submit_btn {
-    background: #B88A5C;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-    color: white;
-    border-color: #B88A5C;
-
-}
-
-.card-title {
-    color: red;
-    font-size: 25px;
-    font-style: inherit;
-    font-weight: 500;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
-.performance-container {
-    background: rgba(255, 255, 255, .08);
-    backdrop-filter: blur(12px);
-    border-radius: 18px;
-    padding: 25px;
-    border: 1px solid rgba(255, 255, 255, .15);
-}
-
-.performance-container h6 {
-    color: #fff !important;
-    font-size: 28px;
-    letter-spacing: 1px;
-}
-
-.kpi-card {
-    background: rgba(255, 255, 255, 0.88);
-    border-radius: 16px;
-    padding: 20px;
-    color: #e2e2e2;
-    height: 100%;
-    transition: .35s;
-    border-left: 5px solid #d4af37;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .35);
-}
-
-.kpi-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.45);
-}
-
-.label-title {
-    color: #000000;
-    font-size: .85rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-.metric-badge {
-    border-radius: 12px;
-    color: #fff;
-    font-weight: bold;
-    min-width: 90px;
-    text-align: center;
-    padding: 12px;
-}
-
-.metric-value-lg {
-    font-size: 28px;
-}
-
-.metric-value-md {
-    font-size: 24px;
-}
-
-/* Colors of ranks*/
-
-.badge-green {
-    background: linear-gradient(135deg, #00c853, #00e676);
-}
-
-.badge-blue {
-    background: linear-gradient(135deg, #1565c0, #42a5f5);
-}
-
-.badge-orange {
-    background: linear-gradient(135deg, #ff9800, #ffb300);
-}
-
-.badge-red {
-    background: linear-gradient(135deg, #e53935, #ff5252);
-}
-
-.badge-gold {
-    background: linear-gradient(135deg, #b8860b, #ffd54f);
-}
-
-.trend-text {
-    font-weight: 700;
-    font-size: .9rem;
-    color: #fff;
-}
-
-.sub-text {
-    font-size: .75rem;
-    color: #bfc7d5;
-}
-
-.text-dark {
-    color: #000000 !important;
-}
-
-.text-success {
-    color: #00e676 !important;
-}
-
-.text-danger {
-    color: #ff6b6b !important;
-}
-
-.header_op {
-    color: #000000;
-}
-
-.tl_btn {
-    background-color: orangered;
-    color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border-color: orangered;
-    border-radius: 3px;
-    font-size: 20px;
-}
-
-.card-text {
-    font-size: larger;
-    margin-top: 20px;
-}
-
-.card-title {
-    margin-top: 20px;
-}
-
-
-
-/* hot topic of the week */
-
-
-.header_mistakes {
-    font-weight: 700;
-    color: #1f2937;
-    letter-spacing: .5px;
-}
-
-.para_2 {
-    color: #000000;
-    font-size: 20px;
-}
-
-.safety-card {
-
-    background: #212121;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
-    transition: .3s;
-}
-
-.safety-card:hover {
-
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .12);
-}
-
-.image-box {
-
-    position: relative;
-    height: 100%;
-}
-
-.image-box img {
-
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.status-badge {
-
-    position: absolute;
-    top: 18px;
-    left: 18px;
-
-    background: #ff0019;
-
-    color: #fff;
-
-    padding: 8px 18px;
-
-    border-radius: 30px;
-
-    font-size: 13px;
-
-    font-weight: 600;
-}
-
-.content-box {
-
-    padding: 35px;
-}
-
-.topic-title {
-
-    font-size: 34px;
-
-    font-weight: 700;
-
-    color: #ffffff;
-
-    margin-bottom: 30px;
-}
-
-.info-grid {
-
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 18px;
-}
-
-.info-item {
-
-    background: #f8fafc;
-
-    border-radius: 10px;
-
-    padding: 18px;
-}
-
-.info-item span {
-
-    display: block;
-
-    color: #000000;
-
-    font-size: 14px;
-
-    margin-bottom: 6px;
-}
-
-.info-item strong {
-
-    font-size: 20px;
-
-    color: #000000;
-}
-
-.sub_header {
-    color: white;
-}
-
-.action-text {
-
-    font-size: 18px;
-
-    line-height: 1.8;
-
-    color: #ffffff;
-}
-
-.sop-badge {
-
-    background: #ff0019;
-
-    color: #fff;
-
-    padding: 4px 10px;
-
-    border-radius: 5px;
-
-    font-weight: 600;
-}
-
-/* end of it  */
-
-/* TL css */
-/* Section Title */
-.section-title {
-    font-size: 40px;
-    font-weight: 700;
-    color: #f58220;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-}
-
-/* Card */
-.tl-card {
-    background: #fff;
-    border: 1px solid #f7d9bb;
-    border-radius: 16px;
-    padding: 18px;
-    transition: .3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .06);
-}
-
-.tl-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(245, 130, 32, .18);
-}
-
-/* Header */
-.tl-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 18px;
-}
-
-.tl-header h5 {
-    margin: 0;
-    color: #f58220;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-/* TL Badge */
-.tl-badge {
-    background: #f58220;
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-/* Bullet */
-.tl-list {
-    margin: 0;
-    padding-left: 18px;
-}
-
-.tl-list li {
-    color: #444;
-    font-size: 18px;
-    line-height: 1.7;
-}
-
-.tl-list li::marker {
-    color: #f58220;
-}
-
-/* Responsive */
-@media (max-width:768px) {
-
-    .section-title {
-        text-align: center;
-        font-size: 23px;
-    }
-
-    .tl-header h5 {
-        font-size: 20px;
-    }
-
-    .tl-list li {
-        font-size: 18px;
-    }
-
-}
-
-/* staff css */
-.section-title-1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #D32F2F;
-    text-transform: uppercase;
-    letter-spacing: .5px;
-}
-
-
-/* Card */
-.tl-card {
-    background: #fff;
-    border: 1px solid #f7d9bb;
-    border-radius: 16px;
-    padding: 18px;
-    transition: .3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .06);
-}
-
-.tl-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(245, 130, 32, .18);
-}
-
-/* Header */
-.tl-header-1 {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 18px;
-}
-
-.tl-header-1 h5 {
-    margin: 0;
-    color: #D32F2F;
-    font-size: 20px;
-    font-weight: 700;
-}
-
-/* TL Badge */
-.tl-badge-1 {
-    background: #D32F2F;
-    color: #fff;
-    padding: 6px 12px;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-/* Bullet */
-.tl-list-1 {
-    margin: 0;
-    padding-left: 18px;
-}
-
-.tl-list-1 li {
-    color: #444;
-    font-size: 20px;
-    line-height: 1.7;
-}
-
-.tl-list-1 li::marker {
-    color: #D32F2F;
-}
-
-/* Responsive */
-@media (max-width:768px) {
-
-    .section-title {
-        text-align: center;
-        font-size: 23px;
-    }
-
-    .tl-header-1 h5 {
-        font-size: 20px;
-    }
-
-    .tl-list-1 li {
-        font-size: 18px;
-    }
-
-}
-
-
-
-
-/* dry ice image size code */
-/* Mobile size adjustment  */
-
-.main_header {
-    font-size: 32px;
-    font-weight: 800;
-    color: #1f2937;
-    margin-bottom: 25px;
-    position: relative;
-    display: inline-block;
-}
-
-.card-title {
-    color: #ff6200;
-    font-weight: bolder;
-
-}
-
-.main_header::after {
-    content: "";
-    position: absolute;
-    width: 70px;
-    height: 4px;
-    background: linear-gradient(90deg, #ff9800, #ff5722);
-    bottom: -8px;
-    left: 0;
-    border-radius: 10px;
-}
-
-
-/* Reminder Cards */
-.card {
-    border-radius: 18px !important;
-    overflow: hidden;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
-    transition: all 0.35s ease;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.reminder-list li {
-    list-style: none;
-    background: #f8f9fa;
-    border-left: 4px solid #ff5722;
-    margin-bottom: 10px;
-    padding: 10px 15px;
-    border-radius: 10px;
-    font-size: 15px;
-    position: relative;
-    padding-left: 45px;
-}
-
-.reminder-list li::before {
-    content: "✓";
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background: #22ff7a;
-    color: #fff;
-    text-align: center;
-    line-height: 22px;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-
-/* Content Area */
-.card-body {
-    padding: 25px;
-}
-
-
-
-/* Paragraph Content */
-.card-text {
-    font-size: 16px;
-    color: #4b5563;
-    line-height: 1.7;
-}
-
-
-/* Notice Badge */
-.text-muted,
-.text-body-secondary {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 7px 15px;
-    background: #fff3cd;
-    color: #f58220 !important;
-    font-weight: 700;
-    border-radius: 20px;
-    font-size: 13px;
-}
-
-
-/* Image Rounded Style */
-.col-md-4 img {
-    border-radius: 18px 0 0 18px;
-}
-
-.card img {
-    max-height: 500px;
-
-}
-
-@media (max-width: 768px) {
-
-
-    .card-body {
-        padding: 1rem;
-    }
-
-    .card-title {
-        font-size: 1.6rem;
-    }
-}
-
-
-/* end here */
-
-
-/* full code of card */
-.flight-delay-card {
-    border: 1px solid #ff9c5e;
-    border-radius: 0;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 2px 18px rgba(255, 98, 0, 0.15);
-}
-
-/* end card style */
-
-/* card Hover */
-.flight-delay-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 25px #ff8a42;
-}
-
-
-/* left slide code */
-.delay-visual {
-    min-height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg,
-            #ff7b00,
-            #ff7b00);
-
-    color: rgb(255, 255, 255);
-    position: relative;
-    overflow: hidden;
-}
-
-
-/* Moving shine */
-.delay-visual::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 60%;
-    height: 100%;
-    background: linear-gradient(90deg,
-            transparent,
-            rgba(214, 214, 214, 0.25),
-            transparent);
-    animation: shine 3s infinite;
-}
-
-
-/* Left content */
-
-.delay-visual-content {
-    text-align: center;
-    position: relative;
-    z-index: 2;
-}
-
-
-/* Plane */
-.delay-icon {
-    font-size: 42px;
-    margin-bottom: 8px;
-    animation: planePulse 2s infinite;
-}
-
-
-/* Flight Delay */
-.delay-label {
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    opacity: 0.9;
-}
-
-
-/* Flight Number */
-.delay-visual h2 {
-    margin: 3px 0 12px;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-
-/* D-8 */
-
-.delay-badge {
-    display: inline-block;
-    padding: 6px 18px;
-    background: white;
-    color: #ff6200;
-    border-radius: 20px;
-    font-size: 16px;
-    font-weight: 800;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    animation: badgePulse 1.8s infinite;
-}
-
-
-/* ================================
-   RIGHT CONTENT
-================================ */
-
-.flight-delay-card .card-body {
-    padding: 25px;
-}
-
-
-/* Label */
-
-.info-label {
-    display: block;
-    margin-bottom: 6px;
-    color: #888;
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.5px;
-}
-
-
-/* Reason */
-
-.flight-delay-card .card-title {
-    margin-bottom: 15px;
-    color: #222;
-    font-size: 22px;
-    font-weight: 700;
-}
-
-
-/* Description */
-
-.delay-description {
-    margin-top: 15px;
-    color: #666;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.delay-status {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 6px 12px;
-    background: #fff3eb;
-    color: #ff6200;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-@keyframes shine {
-
-    0% {
-        left: -100%;
-    }
-
-    50% {
-        left: 150%;
-    }
-
-    100% {
-        left: 150%;
-    }
-
-}
-
-
-@keyframes badgePulse {
-
-    0%,
-    100% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(1.08);
-    }
-
-}
-
-
-
-/* mobile resposive */
-
-@media (max-width: 767px) {
-
-    .delay-visual {
-        min-height: 200px;
-    }
-
-    .delay-icon {
-        font-size: 35px;
-    }
-
-    .delay-visual h2 {
-        font-size: 26px;
-    }
-
-    .flight-delay-card .card-body {
-        padding: 20px;
-    }
-
-}
-/* delay code end */
+</html>

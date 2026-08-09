@@ -274,14 +274,15 @@ body {
 
 
 /* Mobile */
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    .alert-track span{
-        font-size:13px;
-        margin-right:50px;
+    .alert-track span {
+        font-size: 13px;
+        margin-right: 50px;
     }
 
 }
+
 /* end of live alert */
 
 
@@ -420,6 +421,7 @@ body {
     background: #ff6200;
 
 }
+
 /* second card  */
 .update-item.info {
 
@@ -433,6 +435,7 @@ body {
     background: #ff6200;
 
 }
+
 /* end of second card */
 /* Text */
 
@@ -1470,8 +1473,9 @@ p{
     position: relative;
     display: inline-block;
 }
-.card-title{
-    color: #ff6200 ;
+
+.card-title {
+    color: #ff6200;
     font-weight: bolder;
 
 }
@@ -1492,39 +1496,39 @@ p{
 .card {
     border-radius: 18px !important;
     overflow: hidden;
-    background: rgba(255,255,255,0.9);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
     transition: all 0.35s ease;
-    border: 1px solid rgba(255,255,255,0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.reminder-list li{
+.reminder-list li {
     list-style: none;
-    background:#f8f9fa;
-    border-left:4px solid #ff5722;
-    margin-bottom:10px;
-    padding:10px 15px;
-    border-radius:10px;
-    font-size:15px;
-    position:relative;
-    padding-left:45px;
+    background: #f8f9fa;
+    border-left: 4px solid #ff5722;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    position: relative;
+    padding-left: 45px;
 }
 
-.reminder-list li::before{
-    content:"✓";
-    position:absolute;
-    left:15px;
-    top:50%;
-    transform:translateY(-50%);
-    width:22px;
-    height:22px;
-    border-radius:50%;
-    background:#22ff7a;
-    color:#fff;
-    text-align:center;
-    line-height:22px;
-    font-size:13px;
-    font-weight:bold;
+.reminder-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #22ff7a;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    font-size: 13px;
+    font-weight: bold;
 }
 
 
@@ -1562,22 +1566,230 @@ p{
     border-radius: 18px 0 0 18px;
 }
 
-.card img{
+.card img {
     max-height: 500px;
 
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
 
-    .card-body{
-        padding:1rem;
+    .card-body {
+        padding: 1rem;
     }
 
-    .card-title{
-        font-size:1.6rem;
+    .card-title {
+        font-size: 1.6rem;
     }
 }
 
 
 /* end here */
+
+
+/* full code of card */
+.flight-delay-card {
+    border: 1px solid #ff9c5e;
+    border-radius: 0;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 2px 18px rgba(255, 98, 0, 0.15);
+}
+
+/* end card style */
+
+/* card Hover */
+.flight-delay-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px #ff8a42;
+}
+
+
+/* left slide code */
+.delay-visual {
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,
+            #ff7b00,
+            #ff7b00);
+
+    color: rgb(255, 255, 255);
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Moving shine */
+.delay-visual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(214, 214, 214, 0.25),
+            transparent);
+    animation: shine 3s infinite;
+}
+
+
+/* Left content */
+
+.delay-visual-content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Plane */
+.delay-icon {
+    font-size: 42px;
+    margin-bottom: 8px;
+    animation: planePulse 2s infinite;
+}
+
+
+/* Flight Delay */
+.delay-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0.9;
+}
+
+
+/* Flight Number */
+.delay-visual h2 {
+    margin: 3px 0 12px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+/* D-8 */
+
+.delay-badge {
+    display: inline-block;
+    padding: 6px 18px;
+    background: white;
+    color: #ff6200;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    animation: badgePulse 1.8s infinite;
+}
+
+
+/* ================================
+   RIGHT CONTENT
+================================ */
+
+.flight-delay-card .card-body {
+    padding: 25px;
+}
+
+
+/* Label */
+
+.info-label {
+    display: block;
+    margin-bottom: 6px;
+    color: #888;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+/* Reason */
+
+.flight-delay-card .card-title {
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* Description */
+
+.delay-description {
+    margin-top: 15px;
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.delay-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    background: #fff3eb;
+    color: #ff6200;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+@keyframes shine {
+
+    0% {
+        left: -100%;
+    }
+
+    50% {
+        left: 150%;
+    }
+
+    100% {
+        left: 150%;
+    }
+
+}
+
+
+@keyframes badgePulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+}
+
+
+
+/* mobile resposive */
+
+@media (max-width: 767px) {
+
+    .delay-visual {
+        min-height: 200px;
+    }
+
+    .delay-icon {
+        font-size: 35px;
+    }
+
+    .delay-visual h2 {
+        font-size: 26px;
+    }
+
+    .flight-delay-card .card-body {
+        padding: 20px;
+    }
+
+}
+/* delay code end */

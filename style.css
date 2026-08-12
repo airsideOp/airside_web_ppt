@@ -285,8 +285,6 @@ body {
 
 /* end of live alert */
 
-
-
 /* update card */
 .main_update {
     margin: 40px 0;
@@ -510,6 +508,128 @@ mark {
 
 
 
+/* incident card code start */
+/* Incident Alert */
+.incident-alert {
+    width: 102%;
+    margin: 20px 0;
+    background: #ffffff;
+    border-left: 5px solid #f58220;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+/* Header */
+.incident-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: #fff;
+    border-bottom: 1px solid #f58220;
+}
+
+.alert-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ff0101;
+    color: rgb(255, 253, 253);
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: bolder;
+    animation: alertPulse 1.5s infinite;
+}
+
+.incident-header h5 {
+    margin: 0;
+    color: #f58220;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.incident-label {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Body */
+.incident-body {
+    padding: 16px 18px;
+}
+
+.incident-body p {
+    margin: 0 0 14px;
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Prevention box */
+.incident-action {
+    padding: 10px 12px;
+    background: #ffffff;
+    border-left: 3px solid #f58220;
+    border-radius: 5px;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.incident-action strong {
+    color: #f58220;
+}
+
+/* Small entrance animation */
+@keyframes incidentSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Alert icon animation */
+@keyframes alertPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(245, 130, 32, 0.4);
+    }
+
+    50% {
+        transform: scale(1.08);
+        box-shadow: 0 0 0 7px rgba(245, 130, 32, 0);
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .incident-alert {
+        margin: 15px 0;
+    }
+
+    .incident-body p {
+        font-size: 13px;
+    }
+
+    .incident-action {
+        font-size: 12px;
+    }
+    .incident-alert{
+        margin-left: 10px;
+    }
+}
+/* incident card code end */
+
+
+/* all the card codes */
 .card-header {
 
     font-size: 30px;

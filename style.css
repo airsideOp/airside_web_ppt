@@ -507,6 +507,109 @@ mark {
 
 /* end of upodate card */
 
+/* usa container code */
+
+/* Reminder Cards */
+.card {
+    border-radius: 18px !important;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    transition: all 0.35s ease;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.usa-list li {
+    list-style: none;
+    background: #f8f9fa;
+    border-left: 4px solid #ff5722;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    position: relative;
+    padding-left: 45px;
+}
+
+.usa-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #22ff7a;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* Content Area */
+.card-body {
+    padding: 25px;
+}
+
+
+
+/* Paragraph Content */
+.card-text {
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.7;
+}
+
+
+/* Notice Badge */
+.text-muted,
+.text-body-secondary {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 7px 15px;
+    background: #fff3cd;
+    color: #f58220 !important;
+    font-weight: 700;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+/* Image Rounded Style */
+.col-md-4 img {
+    border-radius: 18px 0 0 18px;
+}
+
+.card img {
+    max-height: 500px;
+
+}
+
+@media (max-width: 768px) {
+
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+}
+
+/* end of usa code */
+
+
+
+
+
+
+
+
+
 
 
 /* incident card code start */
@@ -521,7 +624,7 @@ mark {
     overflow: hidden;
 }
 
-/* Header */
+
 .incident-header {
     display: flex;
     align-items: center;
@@ -628,9 +731,6 @@ mark {
     }
 }
 /* incident card code end */
-
-
-
 
 
 

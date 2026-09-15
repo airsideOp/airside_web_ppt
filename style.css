@@ -1471,126 +1471,258 @@ p{
 
 /* hot topic of the week */
 
+/* =========================================
+   SAFETY TOPIC OF THE WEEK
+========================================= */
 
-.header_mistakes {
+.safety-week-section {
+    width: 100%;
+}
+
+
+/* Heading */
+
+.safety-week-heading {
+    margin-bottom: 25px;
+}
+
+.safety-week-heading h1 {
+    font-size: 38px;
     font-weight: 700;
-    color: #1f2937;
-    letter-spacing: .5px;
+    color: #19385f;
+    margin-bottom: 10px;
 }
 
-.para_2 {
-    color: #000000;
-    font-size: 20px;
+.safety-week-heading h1 i {
+    color: #ff5a5f;
 }
 
-.safety-card {
+.safety-week-heading p {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+}
 
+
+/* Main Card */
+
+.safety-week-card {
+    width: 100%;
     background: #212121;
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
-    transition: .3s;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
-.safety-card:hover {
 
-    transform: translateY(-6px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .12);
-}
+/* Image */
 
-.image-box {
-
+.safety-week-image {
     position: relative;
-    height: 100%;
-}
-
-.image-box img {
-
     width: 100%;
     height: 100%;
+    min-height: 390px;
+}
+
+.safety-week-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 390px;
+    display: block;
     object-fit: cover;
 }
 
-.status-badge {
 
+/* Priority Badge */
+
+.safety-week-priority {
     position: absolute;
     top: 18px;
     left: 18px;
+
+    padding: 9px 18px;
+
     background: #ff0019;
     color: #fff;
-    padding: 8px 18px;
 
     border-radius: 30px;
 
     font-size: 13px;
-
     font-weight: 600;
 }
 
-.content-box {
 
+/* Content */
+
+.safety-week-content {
+    width: 100%;
     padding: 35px;
+    background: #212121;
 }
 
-.topic-title {
 
-    font-size: 34px;
+/* Title */
 
+.safety-week-title {
+    margin: 0 0 25px;
+
+    font-size: 30px;
     font-weight: 700;
 
-    color: #ffffff;
-
-    margin-bottom: 30px;
+    color: #fff;
 }
 
-.info-grid {
+
+/* Information Grid */
+
+.safety-week-info {
+    width: 100%;
+
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
     gap: 18px;
 }
 
-.info-item {
-    background: #f8fafc;
-    border-radius: 10px;
+
+/* Information Box */
+
+.safety-week-box {
+    width: 100%;
+
     padding: 18px;
+
+    background: #f8fafc;
+
+    border-radius: 10px;
 }
 
-.info-item span {
+.safety-week-box span {
     display: block;
-    color: #000000;
-    font-size: 14px;
+
     margin-bottom: 6px;
+
+    font-size: 14px;
+    color: #000;
 }
 
-.info-item strong {
+.safety-week-box strong {
+    display: block;
+
     font-size: 20px;
-    color: #000000;
+    line-height: 1.4;
+
+    color: #000;
 }
 
-.sub_header {
-    color: white;
+
+/* High Risk */
+
+.safety-week-high {
+    color: #ff0019 !important;
 }
 
-.action-text {
+
+/* Corrective Action */
+
+.safety-week-action {
+    margin-top: 28px;
+    padding-top: 25px;
+
+    border-top: 1px solid #555;
+}
+
+.safety-week-action h5 {
+    margin: 0 0 12px;
 
     font-size: 18px;
+    font-weight: 600;
 
-    line-height: 1.8;
-
-    color: #ffffff;
+    color: #00e676;
 }
 
-.sop-badge {
+.safety-week-action h5 i {
+    margin-right: 6px;
+}
 
-    background: #ff0019;
+.safety-week-action p {
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 1.8;
 
     color: #fff;
+}
 
-    padding: 4px 10px;
+
+/* SOP Badge */
+
+.safety-week-sop {
+    display: inline-block;
+
+    padding: 3px 9px;
+
+    background: #ff0019;
+    color: #fff;
 
     border-radius: 5px;
 
     font-weight: 600;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    .safety-week-image {
+        height: 300px;
+        min-height: 300px;
+    }
+
+    .safety-week-image img {
+        min-height: 300px;
+    }
+
+    .safety-week-content {
+        padding: 28px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+    .safety-week-heading h1 {
+        font-size: 27px;
+    }
+
+    .safety-week-heading p {
+        font-size: 16px;
+    }
+
+    .safety-week-title {
+        font-size: 24px;
+    }
+
+    .safety-week-info {
+        grid-template-columns: 1fr;
+    }
+
+    .safety-week-content {
+        padding: 22px;
+    }
+
+    .safety-week-action p {
+        font-size: 16px;
+    }
+
 }
 
 /* end of it  */
